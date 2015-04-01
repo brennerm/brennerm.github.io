@@ -1,0 +1,12 @@
+markdown: rdiscount
+permalink: /:categories/:title.html
+rdiscount:
+    extensions: [smart]
+
+gems:
+  - jekyll-sitemap
+
+name: Max Brenner
+url: http://brennerm.github.io
+description: A blog you may like.
+twitter: __brennerm
