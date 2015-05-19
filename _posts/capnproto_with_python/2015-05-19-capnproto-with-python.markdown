@@ -15,7 +15,7 @@ This addresses two points - **data interchange format** and **RPC**. But before 
 This language is used to define structures for further use. It's syntax shows similarities to the C programming language and supports common data types like Boolean, Integer, Struct, Enum, etc.
 Let's have a look at it:
 
-{% highlight capnp %}
+{% highlight raw %}
 const blogUrl :Text = "brennerm.github.io/"; 
 
 enum Language {
@@ -52,7 +52,7 @@ RPC stands for **remote procedure call** which is a type of inter-process commun
 
 It follows the client-server-architecture with the server providing and executing the functions and the clients calling them. The interface definition is handled through the schema language we discussed earlier:
 
-{% highlight capnp %}
+{% highlight raw %}
 interface Calc {
 	sum @0 (a :Int64, b :Int64) -> (result :Int64);
 	sub @1 (a :Int64, b :Int64) -> (result :Int64);
@@ -68,7 +68,7 @@ There are already several implementations of RPC like Java's RMI, CORBA or DBUS,
 ## Cap'n Proto with Python
 With the knowledge of what Cap'n Proto is all about we'll have a look into [pycapnp](https://github.com/jparyani/pycapnp). It's a wrapper for Cap'n Proto that makes most of the features available to use with Python. The following examples will be based on this schema:
 
-{% highlight capnp %}
+{% highlight raw %}
 enum Unit {
 	k @0;
 	f @1;
