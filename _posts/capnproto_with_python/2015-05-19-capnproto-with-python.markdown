@@ -204,3 +204,40 @@ And there is our result:
 
 That's all you need to know for now to make use of Cap'n Proto for your Python application. When having a look at the [roadmap](https://capnproto.org/roadmap.html) there will be some interesting features in the future, like *shared-memory RPC* or *dynamic schema transmission* so stay tuned for updates.
 <br>All shown code examples can be found on [github](https://github.com/brennerm/brennerm.github.io/tree/master/_posts/capnproto_with_python).
+
+#Update 20.05.2015
+Played around using my own sockets when communicating with pycapnp's RPC lately and had some trouble in the beginning. So I just want to let you guys know how to get it working.
+The first step is to connect your client and server socket:
+{% highlight python %}
+# server
+s = socket()
+s.bind(('127.0.0.1', 12345))
+s.listen(1)
+conn, addr = s.accept()
+
+# client
+s = socket()
+s.connect(('127.0.0.1', 12345))
+{% endhighlight %}
+
+Now instead of handing over the address + port hand over your socket to the server and client constructor. 
+{% highlight python %}
+# server
+server = capnp.TwoPartyServer(conn, bootstrap=TempConv())
+server.on_disconnect().wait()
+
+# client
+client = capnp.TwoPartyClient(s)
+tempconv = client.bootstrap().cast_as(tempconv_capnp.TempConv)
+
+request = tempconv.convert_request()
+
+request.temp.value = 100
+request.temp.unit = 'c'
+request.target_unit = 'k'
+
+promise = request.send()
+print(promise.wait())
+{% endhighlight %}
+
+Be sure to use *server.on_disconnect().wait()* instead of *server.run_forever()* and it will work as expected.
