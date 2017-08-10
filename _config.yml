@@ -6,7 +6,7 @@ rdiscount:
 gems:
   - jekyll-sitemap
 
-highlighter: pygments
+highlighter: rouge
 name: Max Brenner
 url: http://brennerm.github.io
 description: A blog you may like.
