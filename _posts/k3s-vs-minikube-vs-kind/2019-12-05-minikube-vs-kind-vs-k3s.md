@@ -4,7 +4,7 @@ title: Minikube vs. kind vs. k3s - What should I use?
 category: posts
 draft: false
 ---
-These days there a few tools that claim to (partially) replace a fully fledged Kubernetes cluster. Using them allows e.g. every developer to have their own local cluster instance running to play around with it, deploy their application or execute tests against applications running in K8s during CI/CD. In this post we'll have a look at three of them, compare their pros and cons and identify use cases for each of them.
+These days there are a few tools that claim to (partially) replace a fully fledged Kubernetes cluster. Using them allows e.g. every developer to have their own local cluster instance running to play around with it, deploy their application or execute tests against applications running in K8s during CI/CD. In this post we'll have a look at three of them, compare their pros and cons and identify use cases for each of them.
 
 ## minikube
 
@@ -12,7 +12,7 @@ minikube is a Kubernetes SIGs project and has been started more than three years
 
 From a user perspective minikube is a very beginner friendly tool. You start the cluster using `minikube start`, wait a few minutes and your `kubectl` is ready to go. To specify a Kubernetes version you can use the `--kubernetes-version` flag. A list of supported versions can be found [here](https://minikube.sigs.k8s.io/docs/reference/configuration/kubernetes/).
 
-If you are new to Kubernetes the first class support for it's dashboard that minikube offers may help you. With a simple `minikube dashboard` the application will open up giving you a nice overview of everything that is going on in your cluster. This is being achieved my [minikube's addon system](https://minikube.sigs.k8s.io/docs/tasks/addons/) that helps you integrating things like, [Helm](https://helm.sh/), [Nvidia GPUs](https://developer.nvidia.com/kubernetes-gpu) and an [image registry](https://docs.docker.com/registry/) with your cluster.
+If you are new to Kubernetes the first class support for its dashboard that minikube offers may help you. With a simple `minikube dashboard` the application will open up giving you a nice overview of everything that is going on in your cluster. This is being achieved by [minikube's addon system](https://minikube.sigs.k8s.io/docs/tasks/addons/) that helps you integrating things like, [Helm](https://helm.sh/), [Nvidia GPUs](https://developer.nvidia.com/kubernetes-gpu) and an [image registry](https://docs.docker.com/registry/) with your cluster.
 
 ## kind
 
@@ -22,7 +22,7 @@ Creating a cluster is very similar to minikube's approach. Executing `kind creat
 
 One feature that I personally enjoy is the ability to load my local images directly into the cluster. This saves me a few extra steps of setting up a registry and pushing my image each and every time I want to try out my changes. With a simple `kind load docker-image my-app:latest` the image is available for use in my cluster. Very nice!
 
-If you are looking for a way to programmatically create a Kubernetes cluster, kind kindly (you have been for waiting for this, don't you :P) publishes it's Go packages that are used under the hood. If you want to get to know more have a look at the [GoDocs](https://godoc.org/sigs.k8s.io/kind/pkg/cluster) and check out how [KUDO uses kind for their integration tests](https://github.com/kudobuilder/kudo/blob/f7b09025f5c2faf5492624facc1dc4c5c7a5ccad/pkg/test/harness.go#L105).
+If you are looking for a way to programmatically create a Kubernetes cluster, kind kindly (you have been for waiting for this, don't you :P) publishes its Go packages that are used under the hood. If you want to get to know more have a look at the [GoDocs](https://godoc.org/sigs.k8s.io/kind/pkg/cluster) and check out how [KUDO uses kind for their integration tests](https://github.com/kudobuilder/kudo/blob/f7b09025f5c2faf5492624facc1dc4c5c7a5ccad/pkg/test/harness.go#L105).
 
 ## k3s
 
