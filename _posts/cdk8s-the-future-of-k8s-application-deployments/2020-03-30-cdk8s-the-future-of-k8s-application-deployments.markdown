@@ -2,7 +2,7 @@
 layout: post
 title: cdk8s, the future of Kubernetes application deployments?
 category: posts
-draft: true
+draft: false
 ---
 > Hint: As cdk8s is fairly new at the time of this writing expect that things will change/have changed.
 
