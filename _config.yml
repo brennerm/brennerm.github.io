@@ -1,10 +1,8 @@
 markdown: kramdown
 permalink: /:categories/:title.html
-rdiscount:
-    extensions: [smart]
-
 gems:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 highlighter: rouge
 name: Max Brenner

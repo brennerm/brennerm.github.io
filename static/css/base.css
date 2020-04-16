@@ -204,3 +204,11 @@ a {
     font-weight: bold; }
   .content .talk-design .color .white {
     color: #fff; }
+
+.contact a {
+  color: rgb(0,0,0);
+}
+
+.contact a:hover {
+  color: rgb(23,111,217);
+}
