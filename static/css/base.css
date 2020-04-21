@@ -4,9 +4,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased; }
 
-a {
-  color: #227ce8; }
-
 .sidebar {
   position: fixed;
   left: 15px;
@@ -29,15 +26,15 @@ a {
       padding-left: 1px;
       font-size: 23px;
       letter-spacing: 5px;
-      color: black; }
+      color: var(--main-text-color); }
     .sidebar .name #lname {
       font-size: 17px;
       font-weight: bold;
       letter-spacing: 1px;
-      color: black; }
+      color: var(--main-text-color); }
   .sidebar .meta a {
     margin-left: 0px;
-    color: black; }
+    color: var(--main-text-color); }
     .sidebar .meta a:hover {
       color: #227ce8; }
   .sidebar .meta {
@@ -48,7 +45,7 @@ a {
     margin: 15px 0 0 0; }
     .sidebar .sections a {
       padding: 3px 0;
-      color: black;
+      color: var(--main-text-color);
       font-weight: bold;
       font-size: 12px;
       display: block; }
@@ -67,32 +64,32 @@ a {
   margin-right: 20px;
   margin-bottom: 50px; }
   .content h1 {
-    color: #333;
+    color: var(--main-text-color);
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     font-weight: 400; }
   .content h1 a {
-    color: #111;
+  color: var(--main-text-color);
     text-decoration: none; }
   .content h2 {
-    color: #333;
+    color: var(--main-text-color);
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     font-weight: 400; }
   .content h2 a {
-    color: #111;
+    color: var(--main-text-color);
     text-decoration: none; }
   .content h3 {
-    color: #333;
+    color: var(--main-text-color);
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     font-weight: 400; }
   .content h3 a {
-    color: #111;
+    color: var(--main-text-color);
     text-decoration: none; }
   .content h4 {
-    color: #333;
+    color: var(--main-text-color);
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     font-weight: 400; }
   .content h4 a {
-    color: #111;
+    color: var(--main-text-color);
     text-decoration: none; }
   .content h1 {
     font-size: 36px;
@@ -101,7 +98,7 @@ a {
     font-size: 30px;
     margin-bottom: 15px; }
   .content h3 {
-    color: #777;
+    color: var(--main-text-color);
     font-size: 25px;
     padding-bottom: 5px;
     margin-bottom: 10px; }
@@ -112,7 +109,7 @@ a {
     line-height: 1.7em; }
     .content p code {
       font-size: 12px;
-      background-color: #eeeeee;
+      background-color: var(--main-background-color);
       border: 1px solid #777777;
       border-radius: 3px;
       padding: 2px 3px; }
@@ -120,12 +117,6 @@ a {
     padding: 3px;
     border: 1px solid #eeeeee;
     max-width: 100%; }
-  .content hr {
-    border: 0;
-    height: 6px;
-    background-image: url("/images/hr.png");
-    background-repeat: repeat-x;
-    margin: 2em 3em; }
   .content li {
     margin-bottom: 10px;
     line-height: 1.4em; }
@@ -168,7 +159,7 @@ a {
       list-style: none;
       padding: 5px 3px;
       margin: 0;
-      color: #777777;
+      color: var(--light-text-color);
       border-bottom: 1px solid #eee; }
     .content .listing li span {
       float: right; }
@@ -204,11 +195,3 @@ a {
     font-weight: bold; }
   .content .talk-design .color .white {
     color: #fff; }
-
-.contact a {
-  color: rgb(0,0,0);
-}
-
-.contact a:hover {
-  color: rgb(23,111,217);
-}
