@@ -8,6 +8,8 @@ layout: layout
     </h1>
 
     <section class="byline">
+        {% include readtime.html content=content %} 
+        -
         {{ page.date | date: "%B %e, %Y" }}
     </section>
 
@@ -19,3 +21,4 @@ layout: layout
         <a href="mailto:xam.rennerb@gmail.com" class="fa fa-2x fa-envelope-o"></a>
     </section>
 </section>
+
