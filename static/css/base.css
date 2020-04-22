@@ -115,7 +115,7 @@ body {
       padding: 2px 3px; }
   .content img {
     padding: 3px;
-    border: 1px solid #eeeeee;
+    border: 1px solid var(--main-background-color);
     max-width: 100%; }
   .content li {
     margin-bottom: 10px;
@@ -136,7 +136,6 @@ body {
       font-style: normal; }
   .content .byline {
     margin-bottom: 17px;
-    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     padding-left: 0px;
     font-size: 17px;
     color: #777; }
