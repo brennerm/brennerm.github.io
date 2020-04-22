@@ -8,11 +8,11 @@ title: "Posts"
       {% unless post.draft %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
-        <span>
+        <div>
           {% include readtime.html content=post.content %} 
           -
           {{ post.date | date: "%B %e, %Y" }}
-        </span>
+        </div>
       </li>
       {% endunless %}
     {% endfor %}

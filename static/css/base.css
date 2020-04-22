@@ -59,7 +59,7 @@ body {
       margin-bottom: 7px; }
 
 .content {
-  max-width: 700px;
+  max-width: 900px;
   margin-left: 150px;
   margin-right: 20px;
   margin-bottom: 50px; }
@@ -161,8 +161,6 @@ body {
       margin: 0;
       color: var(--light-text-color);
       border-bottom: 1px solid #eee; }
-    .content .listing li span {
-      float: right; }
     .content .listing a {
       text-decoration: none; }
       .content .listing a:hover {
@@ -195,3 +193,9 @@ body {
     font-weight: bold; }
   .content .talk-design .color .white {
     color: #fff; }
+
+@media only screen and (min-width: 750px) {
+  .content .listing li div {
+    float: right;
+  }
+}
