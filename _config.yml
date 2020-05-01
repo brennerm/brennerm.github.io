@@ -1,9 +1,5 @@
 markdown: kramdown
 permalink: /:categories/:title.html
-gems:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
 highlighter: rouge
 name: Max Brenner
 url: https://brennerm.github.io
