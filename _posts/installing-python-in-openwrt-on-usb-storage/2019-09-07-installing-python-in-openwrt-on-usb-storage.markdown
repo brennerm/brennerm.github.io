@@ -2,6 +2,7 @@
 layout: post
 title: Installing Python in OpenWRT on a USB storage
 category: posts
+tags: openwrt python
 draft: false
 ---
 ## 1. The problem

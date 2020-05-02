@@ -7,8 +7,12 @@
   text-shadow: none;
   color: var(--main-text-color);
 }
-.hightlight code{
+.hightlight code {
   float: left;
+}
+
+.highlighter-rouge {
+  margin-bottom: 1.2em;
 }
 
 .highlight .hll { background-color: var(--code-background-color) }

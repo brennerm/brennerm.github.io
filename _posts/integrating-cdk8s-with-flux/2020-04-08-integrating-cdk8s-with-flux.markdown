@@ -2,6 +2,7 @@
 layout: post
 title: Integrating cdk8s with Flux
 category: posts
+tags: cdk8s flux gitops kubernetes
 draft: false
 ---
 After I got used to [cdk8s](https://brennerm.github.io/posts/cdk8s-the-future-of-k8s-application-deployments.html) I was curious how well it integrates with some current continuous delivery tools for Kubernetes. Therefore I sat down for a quick session for integrating it with [Flux](https://docs.fluxcd.io). I will give you a short introduction for both tools to make sure you understand everything when we put them together. If you are already familiar with cdk8s and Flux you can probably skip the next two sections.

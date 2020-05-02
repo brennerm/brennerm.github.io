@@ -2,6 +2,7 @@
 layout: post
 title: Minikube vs. kind vs. k3s - What should I use?
 category: posts
+tags: kubernetes
 draft: false
 ---
 These days there are a few tools that claim to (partially) replace a fully fledged Kubernetes cluster. Using them allows e.g. every developer to have their own local cluster instance running to play around with it, deploy their application or execute tests against applications running in K8s during CI/CD. In this post we'll have a look at three of them, compare their pros and cons and identify use cases for each of them.

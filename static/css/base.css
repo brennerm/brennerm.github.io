@@ -107,12 +107,12 @@ body {
     margin-top: 0;
     margin-bottom: 1.2em;
     line-height: 1.7em; }
-    .content p code {
-      font-size: 12px;
-      background-color: var(--main-background-color);
-      border: 1px solid #777777;
-      border-radius: 3px;
-      padding: 2px 3px; }
+  .content p code {
+    font-size: 12px;
+    background-color: var(--main-background-color);
+    border: 1px solid #777777;
+    border-radius: 3px;
+    padding: 2px 3px; }
   .content img {
     padding: 3px;
     border: 1px solid var(--main-background-color);
@@ -125,7 +125,7 @@ body {
     font-size: 14px;
     padding: .25em 1em;
     margin: 1em 1em 0 1em;
-    color: #444; }
+    color: var(--light-text-color); }
     .content blockquote cite:before {
       content: '— '; }
     .content blockquote cite {
@@ -192,6 +192,17 @@ body {
     font-weight: bold; }
   .content .talk-design .color .white {
     color: #fff; }
+
+.content figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.content figcaption {
+  color: var(--light-text-color);
+  font-size: smaller;
+  text-align: center;
+}
 
 @media only screen and (min-width: 750px) {
   .content .listing li div {

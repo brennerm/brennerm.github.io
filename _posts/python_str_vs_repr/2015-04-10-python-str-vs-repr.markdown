@@ -2,6 +2,7 @@
 layout: post
 title: Python's str() vs. repr()
 category: posts
+tags: python
 draft: false
 ---
 Ever wondered what happens when you call Python's built-in str(X), with X being any object you want? The return value of this function depends on the two [magic methods](http://www.rafekettler.com/magicmethods.html) [\_\_str\_\_](https://docs.python.org/3/reference/datamodel.html#object.__str__) being the first choice and [\_\_repr\_\_](https://docs.python.org/3/reference/datamodel.html#object.__repr__) as a fallback. But what's the difference between them? When having a look at the docs

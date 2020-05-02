@@ -2,6 +2,7 @@
 layout: post
 title: Cap'n Proto with Python
 category: posts
+tags: python capnproto
 draft: false
 ---
 If you are already familiar with Cap'n Proto and just want to see how to use it with Python click [here](#capnpwithpython).
