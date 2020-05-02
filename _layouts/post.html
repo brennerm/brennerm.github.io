@@ -11,6 +11,13 @@ layout: layout
         {% include readtime.html content=content %} 
         -
         {{ page.date | date: "%B %e, %Y" }}
+        -
+        <span class="taglist">[
+        {% for tag in page.tags %}
+            {% capture tag_name %}{{ tag }}{% endcapture %}
+                <a href="/tag/{{ tag_name }}"><code>{{ tag_name }}</code></a>
+        {% endfor %}
+        ]</span>
     </section>
 
     {% include anchor_headings.html html=content anchorBody="%heading%" %}
