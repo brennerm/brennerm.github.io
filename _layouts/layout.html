@@ -4,6 +4,10 @@
 <body>
   {% include sidebar.html %}
   {{ content }}
+  <script>
+    if (window.location.host !== 'brennerm.github.io')
+        window.goatcounter = {no_onload: true}
+  </script>
   <script data-goatcounter="https://brennerm.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript" src="{{ site.github.url }}/static/js/application.js"></script>
 </body>
