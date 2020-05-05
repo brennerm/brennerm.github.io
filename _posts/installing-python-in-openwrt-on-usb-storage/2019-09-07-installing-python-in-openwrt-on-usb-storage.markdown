@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Installing Python in OpenWRT on a USB storage
+description: A guide on installing Python on a USB storage device when running OpenWRT.
 category: posts
 tags: openwrt python
 draft: false

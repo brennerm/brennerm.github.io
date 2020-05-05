@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cap'n Proto with Python
+description: Find out how to use Cap'n Proto with Python.
 category: posts
 tags: python capnproto
 draft: false

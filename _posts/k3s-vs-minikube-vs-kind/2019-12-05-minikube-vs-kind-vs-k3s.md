@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Minikube vs. kind vs. k3s - What should I use?
+description: A little comparison of local Kubernetes tools like Minikube, kind and k3s.
 category: posts
 tags: kubernetes
 draft: false

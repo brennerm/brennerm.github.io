@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My top 5 positive points about Ansible in 2017
+description: A 5 point list of my positive thoughts about Ansible in 2017.
 category: posts
 tags: ansible
 draft: false

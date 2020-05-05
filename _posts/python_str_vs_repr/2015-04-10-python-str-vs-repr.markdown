@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Python's str() vs. repr()
+description: This post will tell you difference between Python's str() and repr().
 category: posts
 tags: python
 draft: false

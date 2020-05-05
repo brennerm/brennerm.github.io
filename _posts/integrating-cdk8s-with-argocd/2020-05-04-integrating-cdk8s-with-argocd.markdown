@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Integrating cdk8s with Argo CD
+description: Find out how to integrate cdk8s with Argo CD by following this guide.
 category: posts
 tags: cdk8s argocd gitops kubernetes
 draft: false

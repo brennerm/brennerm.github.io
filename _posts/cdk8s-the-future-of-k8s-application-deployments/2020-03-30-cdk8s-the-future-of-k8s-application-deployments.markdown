@@ -1,6 +1,7 @@
 ---
 layout: post
 title: cdk8s, the future of Kubernetes application deployments?
+description: Find out whether cdk8s will become the future of Kubernetes application deployments.
 category: posts
 tags: kubernetes cdk8s
 draft: false

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Integrating cdk8s with Flux
+description: Find out how to integrate cdk8s with Flux by following this guide.
 category: posts
 tags: cdk8s flux gitops kubernetes
 draft: false
