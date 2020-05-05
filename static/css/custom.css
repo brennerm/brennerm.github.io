@@ -36,6 +36,7 @@ html[data-theme="dark"] {
 	html, html[data-theme="dark"] {
 		--light-text-color: rgb(199, 199, 204);
   		--link-color: rgb(0, 112, 201);
+		--main-background-color: rgb(28, 28, 30);
   		--code-background-color: rgb(21, 21, 21);
   		--main-text-color: rgb(229, 229, 234);
 	}
