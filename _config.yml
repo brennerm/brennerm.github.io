@@ -3,5 +3,5 @@ permalink: /:categories/:title.html
 highlighter: rouge
 name: Max Brenner
 url: https://brennerm.github.io
-description: A blog you may like.
+description: The blog of brennerm sharing his discoveries every now and then. Currently writing about DevOps related stuff, like Kubernetes, GitOps and Service Meshes.
 twitter: __brennerm
