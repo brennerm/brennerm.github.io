@@ -4,3 +4,5 @@ highlighter: rouge
 name: Max Brenner
 url: https://brennerm.github.io
 twitter: __brennerm
+sass:
+  style: compressed
