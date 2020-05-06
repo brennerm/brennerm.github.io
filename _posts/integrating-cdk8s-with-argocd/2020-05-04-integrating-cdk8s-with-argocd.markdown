@@ -6,7 +6,7 @@ category: posts
 tags: cdk8s argocd gitops kubernetes
 draft: false
 ---
-After having a look at [how to integrate cdk8s with Flux](2020-04-08-integrating-cdk8s-with-flux.markdown) I was asked whether I could have a look at [Argo CD](https://argoproj.github.io/argo-cd/) as well. So without further ado, let's integrate cdk8s with Argo CD.
+After having a look at [how to integrate cdk8s with Flux](integrating-cdk8s-with-flux.html) I was asked whether I could have a look at [Argo CD](https://argoproj.github.io/argo-cd/) as well. So without further ado, let's integrate cdk8s with Argo CD.
 
 ## Argo CD
 
