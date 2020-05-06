@@ -6,7 +6,7 @@ category: posts
 tags: cdk8s argocd gitops kubernetes
 draft: false
 ---
-After having a look at [how to integrate cdk8s with Flux](integrating-cdk8s-with-flux/2020-04-08-integrating-cdk8s-with-flux.markdown) I was asked whether I could have a look at [Argo CD](https://argoproj.github.io/argo-cd/) as well. So without further ado, let's integrate cdk8s with Argo CD.
+After having a look at [how to integrate cdk8s with Flux](2020-04-08-integrating-cdk8s-with-flux.markdown) I was asked whether I could have a look at [Argo CD](https://argoproj.github.io/argo-cd/) as well. So without further ado, let's integrate cdk8s with Argo CD.
 
 ## Argo CD
 
@@ -18,7 +18,7 @@ To control Argo CD it ships with a CLI tool and a really nice web UI, that allow
 
 If you want to follow along you gonna need a running Argo CD instance. Feel free to use [my snippet](https://gitlab.com/snippets/1967592) to set one up within 5 minutes. Otherwise go through the official [Getting Started](https://argoproj.github.io/argo-cd/getting_started/) guide.
 
-In case you are not familiar with cdk8s make sure to check out [this little rundown](integrating-cdk8s-with-flux/2020-04-08-integrating-cdk8s-with-flux.markdown#cdk8s) or [my dedicated blog post](cdk8s-the-future-of-k8s-application-deployments/2020-03-30-cdk8s-the-future-of-k8s-application-deployments.markdown) that goes into more detail. Otherwise let's dive right into the action.
+In case you are not familiar with cdk8s make sure to check out [this little rundown](integrating-cdk8s-with-flux.html#cdk8s) or [my dedicated blog post](cdk8s-the-future-of-k8s-application-deployments.html) that goes into more detail. Otherwise let's dive right into the action.
 
 At first we need some cdk8s code that we can deploy later on. We are going to use the [argocd-example-apps](https://github.com/argoproj/argocd-example-apps) repository as a starting point. It contains the same configuration in different formats, like plain K8s manifests, a Helm Chart or kustomize files all deploying a simple guestbook application consisting of one Deployment and one Service. We are going to put our code into a new folder called `cdk8s-guestbook`.
 
