@@ -74,7 +74,7 @@ Afterwards I was able to install Python using `opkg intall python3 -d usb`.
 The OpenWrt docs suggest to precompile all Python modules to achieve a faster execution. `python -m compileall`
 
 Et voila, we have a running Python interpreter!
-```python3
+```python
 [GCC 4.8.3] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import this

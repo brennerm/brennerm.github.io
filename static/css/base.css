@@ -295,6 +295,12 @@ body {
     margin-right: 0;
 }
 
+.content figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .content figcaption {
     color: var(--light-text-color);
     font-size: smaller;
