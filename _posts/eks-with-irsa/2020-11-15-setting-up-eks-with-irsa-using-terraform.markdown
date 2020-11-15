@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up an EKS cluster with IAM/IRSA integration using Terraform
+title: Setting up an EKS cluster with IAM/IRSA integration
 description: Setting up an EKS cluster with IAM/IRSA integration using Terraform and showing how to make use of it.
 category: posts
 tags: aws kubernetes terraform
