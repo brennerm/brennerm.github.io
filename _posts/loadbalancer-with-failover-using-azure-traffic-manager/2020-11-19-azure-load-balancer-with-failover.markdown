@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting up a load balancer with failover support in Azure
-description: Setting up a load balancer with active-passive or failover support using Azure Traffic Manager and Terraform
+description: Setting up a load balancer with active-passive or failover support using Microsoft Azure Traffic Manager and Terraform
 category: posts
 tags: azure terraform
 draft: false
