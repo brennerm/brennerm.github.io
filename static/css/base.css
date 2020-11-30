@@ -317,6 +317,10 @@ body {
     }
 }
 
+.contact {
+    text-align: center;
+}
+
 .contact a {
     color: var(--main-text-color);
 }
