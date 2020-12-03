@@ -23,4 +23,8 @@ Feel free to use them for yourself. Giving credit is very much appreciated. Have
 
 {% include image.html url="/static/images/k8s-storage.svg" description="Overview of Kubernetes Storage objects" %}
 
+## RBAC
+
+{% include image.html url="/static/images/k8s-rbac.svg" description="Overview of Kubernetes RBAC objects" %}
+
 ---
