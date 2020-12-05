@@ -382,9 +382,12 @@ html[data-theme="dark"] #utterances-dark {
     display: block;
 }
 
+html #utterances-light,
 html[data-theme="light"] #utterances-light {
     display: block;
 }
+
+html #utterances-dark,
 html[data-theme="light"] #utterances-dark {
     display: none;
 }
