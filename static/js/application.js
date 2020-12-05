@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
     if (systemInitiatedDark.matches) {
         enableDarkMode(true)
     } else if (theme === "dark") {
-        enableDarkMode(true)
+        enableDarkMode()
     } else if (theme === "light") {
         enableLightMode()
     } else {
