@@ -2,70 +2,67 @@ const enableDarkModeLabel = "dark mode"
 const enableLightModeLabel = "light mode"
 
 let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)");
-let theme = localStorage.getItem('theme');
 
 
 document.addEventListener("DOMContentLoaded", function(){
+    let theme = localStorage.getItem('theme');
+    console.log(`User prefers color scheme: ${systemInitiatedDark.matches}`)
+    console.log(`Local storage stored theme: ${theme}`)
+
     if (systemInitiatedDark.matches) {
-        document.getElementById("theme-toggle").innerHTML = enableLightModeLabel;
+        enableDarkMode(true)
+    } else if (theme === "dark") {
+        enableDarkMode(true)
+    } else if (theme === "light") {
+        enableLightMode()
     } else {
-        document.getElementById("theme-toggle").innerHTML = enableDarkModeLabel;
+        enableLightMode()
     }
 
     function prefersColorTest(systemInitiatedDark) {
+        console.log("prefers-color-scheme change detected")
         if (systemInitiatedDark.matches) {
             enableDarkMode(true)
         } else {
             enableLightMode(true)
         }
     }
-    systemInitiatedDark.addListener(prefersColorTest);
 
-    if (theme === "dark") {
-        enableDarkMode()
-    } else if (theme === "light") {
-        enableLightMode()
-    }
+    systemInitiatedDark.addEventListener("change", listener=prefersColorTest)
 })
 
 function switchMode() {
-    // it's important to check for overrides again
-    let theme = localStorage.getItem('theme');
-    if (theme === "dark") {
+    let currentTheme = localStorage.getItem('theme');
+    if (currentTheme === "dark") {
         enableLightMode()
-    }	else if (theme === "light") {
+    } else if (currentTheme === "light") {
         enableDarkMode()
     } else if (systemInitiatedDark.matches) {
-        enableDarkMode()
+        enableLightMode()
     } else {
         enableLightMode()
     }
 }
 
 function enableLightMode(clearCache=false) {
+    console.log("Enabling light mode")
     document.documentElement.setAttribute('data-theme', 'light');
     document.getElementById("theme-toggle").innerHTML = enableDarkModeLabel;
 
-    document.getElementById('utterances-light').style.display = 'block';
-    document.getElementById('utterances-dark').style.display = 'none';
-
     if (clearCache) {
-        localStorage.setItem('theme', '');
+        localStorage.removeItem('theme');
     } else {
         localStorage.setItem('theme', 'light');
     }
 }
 
-
 function enableDarkMode(clearCache=false) {
+    console.log("Enabling dark mode")
     document.documentElement.setAttribute('data-theme', 'dark');
     document.getElementById("theme-toggle").innerHTML = enableLightModeLabel;
 
-    document.getElementById('utterances-dark').style.display = 'block';
-    document.getElementById('utterances-light').style.display = 'none';
-
     if (clearCache) {
-        localStorage.setItem('theme', '');
+        localStorage.removeItem('theme');
     } else {
         localStorage.setItem('theme', 'dark');
     }
