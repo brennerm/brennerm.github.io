@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kubernetes Overview Diagrams
-description: A collection of overview of Kubernetes workload, networking, storage and other objects
+description: A collection of overviews of Kubernetes architecture and workload, networking, storage and RBAC objects
 category: posts
 tags: kubernetes
 draft: false
@@ -10,6 +10,10 @@ draft: false
 I started creating and sharing overviews of various Kubernetes objects on my [Twitter](https://twitter.com/__brennerm). Some people requested to put them in a more convenient place for later use. This page is the result.
 
 Feel free to use them for yourself. Giving credit is very much appreciated. Have fun (y)
+
+## Architecture
+
+{% include image.html url="/static/images/k8s-architecture.svg" description="Overview of Kubernetes' basic architecture" %}
 
 ## Workload
 
