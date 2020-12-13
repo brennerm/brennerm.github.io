@@ -2,6 +2,7 @@ const enableDarkModeLabel = "dark mode"
 const enableLightModeLabel = "light mode"
 
 let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)");
+const zooming = new Zooming({})
 
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     systemInitiatedDark.addEventListener("change", listener=prefersColorTest)
+    zooming.listen('.img-zoomable')
 })
 
 function switchMode() {
@@ -48,6 +50,7 @@ function enableLightMode(clearCache=false) {
     console.log("Enabling light mode")
     document.documentElement.setAttribute('data-theme', 'light');
     document.getElementById("theme-toggle").innerHTML = enableDarkModeLabel;
+    zooming.config({bgColor: 'rgb(255, 255, 255)'})
 
     if (clearCache) {
         localStorage.removeItem('theme');
@@ -60,6 +63,7 @@ function enableDarkMode(clearCache=false) {
     console.log("Enabling dark mode")
     document.documentElement.setAttribute('data-theme', 'dark');
     document.getElementById("theme-toggle").innerHTML = enableLightModeLabel;
+    zooming.config({bgColor: 'rgb(28, 28, 30)'})
 
     if (clearCache) {
         localStorage.removeItem('theme');

@@ -392,6 +392,10 @@ html[data-theme="light"] #utterances-dark {
     display: none;
 }
 
+.img-zoomable{
+    cursor: pointer!important;
+}
+
 .highlight {
     margin: 0;
     background-color: var(--code-background-color);
