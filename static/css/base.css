@@ -60,10 +60,6 @@ body {
     margin-left: 4px;
 }
 
-.sidebar .meta .icon {
-    margin-right: 6px;
-}
-
 .sidebar .sections {
     margin: 15px 0 0 0;
 }
@@ -394,6 +390,15 @@ html[data-theme="light"] #utterances-dark {
 
 .img-zoomable{
     cursor: pointer!important;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+    margin: 0;
+    width: inherit;
+}
+
+.icon-2x {
+    font-size: 2em;
 }
 
 .highlight {
