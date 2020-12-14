@@ -51,6 +51,7 @@ function enableLightMode(clearCache=false) {
     document.documentElement.setAttribute('data-theme', 'light');
     document.getElementById("theme-toggle").innerHTML = enableDarkModeLabel;
     zooming.config({bgColor: 'rgb(255, 255, 255)'})
+    loadUtterances(false)
 
     if (clearCache) {
         localStorage.removeItem('theme');
@@ -64,10 +65,28 @@ function enableDarkMode(clearCache=false) {
     document.documentElement.setAttribute('data-theme', 'dark');
     document.getElementById("theme-toggle").innerHTML = enableLightModeLabel;
     zooming.config({bgColor: 'rgb(28, 28, 30)'})
+    loadUtterances(true)
 
     if (clearCache) {
         localStorage.removeItem('theme');
     } else {
         localStorage.setItem('theme', 'dark');
+    }
+}
+
+function loadUtterances(darkMode=false) {
+    const commentsContainer = document.getElementById("comments");
+    if (commentsContainer !== null) {
+        commentsContainer.innerHTML = ''
+        const utterancesScript = document.createElement("script");
+        utterancesScript.setAttribute("id", "utterances");
+        utterancesScript.setAttribute("src", "https://utteranc.es/client.js");
+        utterancesScript.setAttribute("repo", "brennerm/brennerm.github.io-comments");
+        utterancesScript.setAttribute("issue-term", "pathname");
+        utterancesScript.setAttribute("theme", darkMode ? "github-dark" : "github-light");
+        utterancesScript.setAttribute("crossorigin", "anonymous");
+        utterancesScript.setAttribute("async", "true");
+
+        commentsContainer.appendChild(utterancesScript);
     }
 }

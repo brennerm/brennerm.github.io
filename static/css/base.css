@@ -370,24 +370,6 @@ html[data-theme="dark"] {
     }
 }
 
-html[data-theme="dark"] #utterances-light {
-    display: none;
-}
-
-html[data-theme="dark"] #utterances-dark {
-    display: block;
-}
-
-html #utterances-light,
-html[data-theme="light"] #utterances-light {
-    display: block;
-}
-
-html #utterances-dark,
-html[data-theme="light"] #utterances-dark {
-    display: none;
-}
-
 .img-zoomable{
     cursor: pointer!important;
 }
