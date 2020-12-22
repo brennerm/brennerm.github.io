@@ -51,4 +51,20 @@ All in all I'm happy that I made this mistake for a service with no impact to th
 
 And that's my how I screwed up remote access to dozens of servers in seconds. Hopefully you had a good laugh from my postmortem story and ideally learned how to prevent something like this from happening to you. 👍
 
+## Update 22.12.2020
+
+Another safety measure several users on [Reddit](https://www.reddit.com/r/ansible/comments/ki2u23/screwing_up_remote_access_to_dozens_of_servers/){:target="_blank"} recommended, is to validate the config after copying it onto the server. In case of sshd this would look like so:
+
+```yaml
+- name: Upload sshd config file
+  template:
+    src: sshd_config
+    dest: /etc/ssh/sshd_config
+    validate: "/usr/sbin/sshd -T -f %s"
+```
+
+`-T` tells sshd to validate the config, `-f` is used to pass its path and `%s` will be replaced by Ansible to point to the temporary config file.
+
+This is supported by multiple Ansible modules, like [copy](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/copy_module.html){:target="_blank"} or [template](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/template_module.html){:target="_blank"} and will prevent copying the faulty config.
+
 ---
