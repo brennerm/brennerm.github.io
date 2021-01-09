@@ -1,0 +1,21 @@
+name: Broken link check
+on:
+  workflow_dispatch:
+  push:
+  schedule: 
+    - cron: '0 8 * * *'
+
+jobs:
+  broken_link_checker_job:
+    runs-on: ubuntu-latest
+    name: Check for broken links
+    steps:
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '12'
+    - name: Install broken-link-checker
+      run: npm install -g broken-link-checker
+
+    - name: Check for broken links
+      run: blc https://brennerm.github.io/ -ro --exclude twitter.com/__brennerm # somehow this link is detected as broken
+        
