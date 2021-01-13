@@ -1,6 +1,5 @@
 --- layout: stylesheet --- @charset "UTF-8";
 body {
-    font-family: "DejaVu Sans", Arial, Helvetica;
     margin: 0;
     -webkit-font-smoothing: antialiased;
 }
@@ -97,6 +96,8 @@ body {
     color: var(--main-text-color);
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     font-weight: 400;
+    font-size: 36px;
+    margin: 18px 0 5px 0;
 }
 
 .content h1 a {
@@ -108,6 +109,8 @@ body {
     color: var(--main-text-color);
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 
 .content h2 a {
@@ -119,6 +122,9 @@ body {
     color: var(--main-text-color);
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     font-weight: 400;
+    font-size: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .content h3 a {
@@ -135,23 +141,6 @@ body {
 .content h4 a {
     color: var(--main-text-color);
     text-decoration: none;
-}
-
-.content h1 {
-    font-size: 36px;
-    margin: 18px 0 5px 0;
-}
-
-.content h2 {
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-
-.content h3 {
-    color: var(--main-text-color);
-    font-size: 25px;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
 }
 
 .content p {
@@ -329,6 +318,7 @@ html {
     background-color: var(--main-background-color);
     color: var(--main-text-color);
     scrollbar-color: var(--main-text-color);
+    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
 }
 
 html a {
@@ -853,8 +843,6 @@ html[data-theme="dark"] {
     font-weight: bold
 }
 
-
-/* Literal.Number.Integer.Long */
 
 @media only screen and (max-device-width: 480px) {
     .sidebar {
