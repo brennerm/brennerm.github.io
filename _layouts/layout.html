@@ -3,7 +3,9 @@
 {% include head.html %}
 <body>
   {% include sidebar.html %}
-  {{ content }}
+  <div id="content-parent">
+    {{ content }}
+  </div>
   <script>
     if (window.location.host !== 'brennerm.github.io')
         window.goatcounter = {no_onload: true}
