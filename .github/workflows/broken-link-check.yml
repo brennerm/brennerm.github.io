@@ -16,5 +16,5 @@ jobs:
       run: npm install -g broken-link-checker
 
     - name: Check for broken links
-      run: blc https://brennerm.github.io/ -ro --exclude twitter.com/__brennerm # somehow this link is detected as broken
+      run: blc https://brennerm.github.io/ -ro --exclude '*reddit.com*' --exclude twitter.com/__brennerm # somehow these links are detected as broken
         
