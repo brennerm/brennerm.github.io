@@ -379,6 +379,10 @@ html[data-theme="dark"] {
     font-size: 2em;
 }
 
+.content .tiny {
+    font-size: 0.4em;
+}
+
 .highlight {
     margin: 0;
     background-color: var(--code-background-color);
