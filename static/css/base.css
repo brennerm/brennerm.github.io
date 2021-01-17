@@ -343,9 +343,9 @@ html[data-theme="light"] {
 html[data-theme="dark"] {
     --light-text-color: rgb(199, 199, 204);
     --link-color: rgb(0, 112, 201);
-    --main-background-color: rgb(28, 28, 30);
-    --code-background-color: rgb(21, 21, 21);
-    --main-text-color: rgb(229, 229, 234);
+    --main-background-color: #0d1117;
+    --code-background-color: #14181e;
+    --main-text-color: #c9d1d9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -353,9 +353,9 @@ html[data-theme="dark"] {
     html[data-theme="dark"] {
         --light-text-color: rgb(199, 199, 204);
         --link-color: rgb(0, 112, 201);
-        --main-background-color: rgb(28, 28, 30);
-        --code-background-color: rgb(21, 21, 21);
-        --main-text-color: rgb(229, 229, 234);
+        --main-background-color: #0d1117;
+        --code-background-color: #14181e;
+        --main-text-color: #c9d1d9;
     }
     html[data-theme="light"] {
         --light-text-color: rgb(72, 72, 74);
