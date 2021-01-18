@@ -146,6 +146,6 @@ exchangerates                     er           operators.brennerm.github.io   tr
 ...
 ```
 
-Personally I prefer this approach compared to using a CRD manifest. I'll talk about the reason in the second part of this blog series in which we'll implement the controller application. It'll be available shortly.
+Personally I prefer this approach compared to using a CRD manifest. I'll talk about the reason in [the second part](/posts/k8s-operators-with-python-part-2.html) of this blog series in which we'll implement the controller application.
 
 ---
