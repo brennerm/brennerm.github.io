@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kubernetes operators with Python &#35;2&#58; Implementing Controller
-description: Developing Kubernetes/K8s operators with Python Part 2&#58; Implementing the controller using kopf
+description: Developing Kubernetes/K8s operators with Python Part 2&#58; Implementing the controller using Kopf
 category: posts
 tags: kubernetes python
 draft: false
@@ -20,7 +20,7 @@ The controller application itself is essentially an endless loop that constantly
 - [issuing TLS certificates](https://github.com/jetstack/cert-manager){:target="_blank"}
 - or fetching exchange rates from an API and storing the result in a ConfigMap
 
-Although this could be implemented from scratch there's a great framework that does most of the heavy lifting called [kopf](https://kopf.readthedocs.io/en/latest/){:target="_blank"}. It allows you to almost entirely focus on implementing the business logic of your controller.
+Although this could be implemented from scratch there's a great framework that does most of the heavy lifting called [Kopf](https://kopf.readthedocs.io/en/latest/){:target="_blank"}. It allows you to almost entirely focus on implementing the business logic of your controller.
 
 Below you can see all the code that is necessary to watch for and react on a newly created ExchangeRate object.
 
@@ -64,9 +64,9 @@ k8s_client.CoreV1Api().patch_namespaced_config_map(name, namespace, new_data)
 
 Regarding handling the deletion we could choose the obvious way of implementing the `kopf.on.delete` handler and deleting the ConfigMap manually. The more elegant way IMO is making use of Kubernetes' [owner references](https://kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/){:target="_blank"}. These allow to specify parent-child relationships between objects which will result in an automatic garbage collection of all children upon deleting the parent.
 
-And as we are even too lazy to implement this ourselves we'll let kopf take care of it by passing our ConfigMap data to `kopf.adopt`. Next to a few other things this will set the owner reference of the ConfigMap to our ExchangeRate object.
+And as we are even too lazy to implement this ourselves we'll let Kopf take care of it by passing our ConfigMap data to `kopf.adopt`. Next to a few other things this will set the owner reference of the ConfigMap to our ExchangeRate object.
 
-And that is all to create a simple "CRUD" controller application using kopf. Let's package and finally deploy it to our Kubernetes cluster.
+And that is all to create a simple "CRUD" controller application using Kopf. Let's package and finally deploy it to our Kubernetes cluster.
 
 ## Packaging and running the controller
 
@@ -169,5 +169,17 @@ And there we have our working operator that takes care of registering a CRD on s
 Of course that's a fairly minimal example but it should give you all the tools and knowledge to create much more complex operators.
 
 I pushed all the code and manifests into a [Git repository](https://github.com/brennerm/exchangerates-operator){:target="_blank"} for you to see the operator as a whole. If you still run into issues or have open questions feel free to drop me a message. Hope you enjoyed that little guide. 👍
+
+## Update 19.01.2020
+Nolar, aka Kopf's current maintainer, [pointed out](https://twitter.com/nolar/status/1351289223979143174?s=20){:target="_blank"} that Timers would be a good fit for this use case as well. They allow you to regularly trigger your controller no matter if there were changes on your objects. For our use case this would for example allow us to automatically pull and update the exchange rate every hour like so:
+
+```python
+@kopf.timer('operators.brennerm.github.io', 'v1', 'exchangerates', interval=3600.0)
+def update_exchange_rate(namespace, name, spec, status, **kwargs):
+    # update ConfigMap
+    ...
+```
+
+Check [the documentation](https://kopf.readthedocs.io/en/stable/timers/){:target="_blank"} for some further details.
 
 ---
