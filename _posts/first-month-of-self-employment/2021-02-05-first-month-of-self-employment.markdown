@@ -21,7 +21,7 @@ Being self-employed also means being responsible for managing when and how much 
 
 While being surprised during the creation of this chart I guess this spread is pretty common. You start with a lot of energy at the beginning of the week and it decreases every day. So if you need something done quick, make sure to give me call at the beginning of the week. 😁
 
-In total was working **149 hours** across January. Dividing this by 20 working days results in **7.45 hours a day** or **37 hours a week**. That's pretty close to the usual 40 hour contracts that are common in Germany and I had signed at my previous employers.
+In total I was working **149 hours** across January. Dividing this by 20 working days results in **7.45 hours a day** or **37 hours a week**. That's pretty close to the usual 40 hour contracts that are common in Germany and I had signed at my previous employers.
 
 I expect to stay at this level of workload at least as long as COVID is a thing. Afterwards I may spend more time on other activities I enjoy and have been missing since quite some time.
 
