@@ -57,6 +57,7 @@ body {
 
 .sidebar .meta {
     margin-left: 4px;
+    font-size: 17px;
 }
 
 .sidebar .sections {
@@ -67,7 +68,7 @@ body {
     padding: 3px 0;
     color: var(--main-text-color);
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
     display: block;
 }
 
@@ -214,7 +215,6 @@ body {
 .content .listing {
     margin: 10px 0 0 0;
     padding: 0;
-    font-family: Helvetica, sans-serif;
 }
 
 .content .listing ul {
@@ -223,7 +223,7 @@ body {
 }
 
 .content .listing li {
-    font-size: 13px;
+    font-size: 16px;
     list-style: none;
     padding: 5px 3px;
     margin: 0;
