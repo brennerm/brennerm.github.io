@@ -31,4 +31,8 @@ Feel free to use them for yourself. Giving credit is very much appreciated. Have
 
 {% include image.html url="/static/images/k8s-rbac.svg" description="Overview of Kubernetes RBAC objects" %}
 
+## Resource requests and limits
+
+{% include image.html url="/static/images/k8s-resources.svg" description="Overview of Kubernetes resources requests and limits" %}
+
 ---

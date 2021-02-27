@@ -1,4 +1,7 @@
---- layout: stylesheet --- @charset "UTF-8";
+---
+layout: stylesheet
+---
+@charset "UTF-8";
 body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
