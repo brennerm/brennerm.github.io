@@ -4,6 +4,7 @@ title: Kubernetes operators with Python &#35;2&#58; Implementing Controller
 description: Developing Kubernetes/K8s operators with Python Part 2&#58; Implementing the controller using Kopf
 category: posts
 tags: kubernetes python
+thumbnail: exchangerates-operator.svg 
 draft: false
 ---
 ## Introduction

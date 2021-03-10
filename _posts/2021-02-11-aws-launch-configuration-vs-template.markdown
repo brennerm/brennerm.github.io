@@ -3,7 +3,8 @@ layout: post
 title: AWS EC2 launch configurations vs launch templates
 description: A comparison of EC2 launch configurations and launch templates + an advice which one you should prefer
 category: posts
-tags: [aws]
+tags: aws
+thumbnail: launch-template-advanced.png
 draft: false
 ---
 At first sight AWS launch configurations and templates may seem very similar. Both allow you to define a blueprint for EC2 instances. Let's have a look at their differences and see which one we should prefer.

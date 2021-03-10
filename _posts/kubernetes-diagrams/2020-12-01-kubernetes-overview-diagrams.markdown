@@ -4,6 +4,7 @@ title: Kubernetes Overview Diagrams
 description: A collection of overviews of Kubernetes architecture and workload, networking, storage and RBAC objects
 category: posts
 tags: kubernetes
+thumbnail: k8s-workloads.svg
 draft: false
 ---
 

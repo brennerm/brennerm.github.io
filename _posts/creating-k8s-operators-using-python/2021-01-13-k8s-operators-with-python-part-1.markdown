@@ -4,6 +4,7 @@ title: Kubernetes operators with Python &#35;1&#58; Creating CRDs
 description: Developing Kubernetes/K8s operators with Python Part 1&#58; Creating CRDs using manifests and the Kubernetes API
 category: posts
 tags: kubernetes python
+thumbnail: exchangerates-operator.svg 
 draft: false
 ---
 ## Introduction

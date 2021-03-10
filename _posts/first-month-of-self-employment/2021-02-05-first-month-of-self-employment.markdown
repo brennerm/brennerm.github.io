@@ -4,6 +4,7 @@ title: My first month of self-employment
 description: A summary of my first month being self-employed
 category: posts
 tags: self-employment
+thumbnail: working-hours-distribution.svg
 draft: false
 ---
 
