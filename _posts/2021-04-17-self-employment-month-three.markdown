@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Self-employment&#58; three months update
-description: Draft
+description: Read through the experiences I made during three months of self-employment as a DevOps freelancer.
 category: posts
 tags: self-employment 
 thumbnail: hours-worked-per-month.png
@@ -81,3 +81,4 @@ Self-employment isn't easy and it's definitely not for everyone. But I think the
 Feel free to hit me up if you have some questions that you'd like to get answered or topics that I should cover. Until then, stay safe. ✌️
 
 ---
+
