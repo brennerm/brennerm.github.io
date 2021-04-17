@@ -62,7 +62,7 @@ As usual, the rate of income tax increases with the amount you earn, combined fr
 
 If you read my first self-employment blog post you may remember me not being sure what I'll end up paying to be able to receive money in foreign currencies. Turned out it was a lot (>5%).
 
-Paying a high fee just to be able to get money onto your bank account hurts. Especially if you make the calculation back to the amount of time you spent to earn it in the first place. Working 3 days a month just for a bank transfer is a very unsatisfiable feeling.
+Paying a high fee just to be able to get money onto your bank account hurts. Especially if you make the calculation back to the amount of time you spent to earn it in the first place. Working 3 days a month just for a bank transfer is a very unsatisfying feeling.
 
 Lessons learned: Clarify how you'll get paid before joining a client. With platforms like [Wise*](https://wise.com/invite/u/maximilianb339){:target="_blank"} (formerly: TransferWise) it can be very easy and cheap to pay and get paid from people all across the globe. But in certain countries their service isn't available (yet). There are alternatives. But expect them to be (way) more expensive.
 
