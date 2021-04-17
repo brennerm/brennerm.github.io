@@ -56,4 +56,8 @@ So there you have it. My first month of self-employment in ~800 words. Hopefully
 
 All in all I'm very happy with my new way of working and hope that I have to take care of less and less annoyances each month and to be able to focus on what I enjoy. Maybe there'll be another update after some time. Stay safe!
 
+## update 17.04.2021
+
+I came up with an update after [three months of self-employment](/posts/self-employment-month-three.html). Feel free to check it out.
+
 ---

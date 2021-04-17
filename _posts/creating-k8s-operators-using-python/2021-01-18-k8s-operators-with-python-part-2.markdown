@@ -171,7 +171,7 @@ Of course that's a fairly minimal example but it should give you all the tools a
 
 I pushed all the code and manifests into a [Git repository](https://github.com/brennerm/exchangerates-operator){:target="_blank"} for you to see the operator as a whole. If you still run into issues or have open questions feel free to drop me a message. Hope you enjoyed that little guide. 👍
 
-## Update 19.01.2020
+## Update 19.01.2021
 Nolar, aka Kopf's current maintainer, [pointed out](https://twitter.com/nolar/status/1351289223979143174?s=20){:target="_blank"} that Timers would be a good fit for this use case as well. They allow you to regularly trigger your controller no matter if there were changes on your objects. For our use case this would for example allow us to automatically pull and update the exchange rate every hour like so:
 
 ```python
