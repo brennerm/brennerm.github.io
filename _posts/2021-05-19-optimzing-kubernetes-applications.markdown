@@ -11,33 +11,43 @@ draft: false
 
 ## intro
 
-Optimizing an application on Kubernetes is hard, especially if your goal is to keep costs low. They're plenty of options, the dependency trees in modern microservice architectures are getting bigger and bigger and for some (most?) of us all of this takes place on hardware that we have no control over.
+Manually optimizing an application on Kubernetes is hard, especially if your goal is to keep costs low. There are plenty of options, the dependency trees in modern microservice architectures are getting bigger and bigger and for some (most?) of us all of this takes place on hardware that we have no control over.
 
 Additionally without a lot of testing and monitoring effort it's very difficult to determine the "correct" specs for your deployments. It requires extensive trial and error to push your application into the area where it still performs without being overprovisioned.
 
-Otherwise you'll end up wasting resources and thus [money](https://brennerm.github.io/posts/wasting-money-with-kubernetes.html){:target="_blank"} or with a system that falls apart as load increases. That's why we will take a look at a tool that aims to solve this problem without occupying endless amounts of engineering time called StormForge Optimize.
+Otherwise you'll end up wasting resources (and thus [money](https://brennerm.github.io/posts/wasting-money-with-kubernetes.html){:target="_blank"}) or with a system that falls apart as load increases. That's why I decided to take a look at StormForge, a tool that aims to solve this problem without occupying endless amounts of engineering time called StormForge Optimize.
 
-## StormForge Optimize
+## Optimizing with StormForge
 
-StormForge Optimize (SFO) is a SaaS product that combines trial and error experiments with machine learning to help you determine configurations that will optimize your application for the metrics you care about. It consists of the following three key components:
+StormForge is a SaaS product that combines trial and error experiments with machine learning to help you determine configurations that will optimize your application for the metrics you care about. It also includes Performance Testing to place load on your system in a test environment, but for this blog I’ll focus on StormForge’s optimization capabilities. This includes three key components:
 
-- the SFO Kubernetes controller, handling the experiment execution and the communication with the ML model
+- the StormForge Kubernetes controller, handling the experiment execution and the communication with the machine learning (ML) model
 - the ML model, responsible for selecting the parameter sets for each trial based on previous results
-- the SFO dashboard, allowing you to analyze and export the resulting configurations of your experiments during and after the execution
+- the StormForge dashboard, allowing you to analyze and export the resulting configurations of your experiments during and after the execution
 
-Below you can find a visualization that explains the general workflow of an SFO experiment.
+Below you can find a visualization that explains the general workflow of an StormForge experiment.
 
-{% include image.html url="/static/images/sfo-flow.png" description="StormForge Optimize experiment flow" %}
+{% include image.html url="/static/images/sfo-flow.png" description="StormForge experiment flow" %}
 
-TODO
+1. You start by creating an experiment, including your parameters and metrics you want to optimize.
+2. The baseline values of your parameters will act as a starting point.
+3. Your Kubernetes application (defined by a Pod, Job, Deployment, StatefulSet or DaemonSet) will be patched with these parameter values.
+4. StormForge will wait for a certain condition. Usually this will be your application getting ready to process incoming requests.
+5. A trial job will be executed putting your application under load.
+6. Metrics, that you can freely define, will be collected.
+7. The gathered metrics + the parameters of this run will be fed into StormForge's machine learning model.
+8. Based on that, the ML model will determine new parameter values.
+9. Steps 3 to 8 will be repeated for a configurable amount of times.
 
-As Kubernetes is SFO's primary target platform you interact with it using the manifests you should be already familiar with. The main one being the _Experiment_ manifest, which consists of the following parts:
+Over the course of a single experiment, StormForge will be able to predict configurations that will exceed the performance of your baseline values, based on the metrics you defined.
+
+As Kubernetes is StormForge's primary target platform, you interact with it using the manifests, a concept you are probably already familiar with. The main one being the _Experiment_ manifest, which consists of the following parts:
 
 ### Optimization
 
-The optimization section allows you to set the number of iterations that the experiment will go through. Adjust this value according to your use case. Integrating SFO experiments into your CI pipeline to prevent performance regression? 20 trials may be sufficient.
+The optimization section allows you to set the number of iterations that the experiment will go through. Adjust this value according to your use case. Integrating StormForge experiments into your CI pipeline to prevent performance regression? 20 trials may be sufficient.
 
-Wanting to create a baseline configuration for your newly written application? Let SFO cycle through 200 iterations and leave it running overnight to get the most accurate result.
+Wanting to create a baseline configuration for your newly written application? Let StormForge cycle through 200 iterations and leave it running overnight to get the most accurate result.
 
 Example:
 
@@ -51,9 +61,9 @@ Example:
 
 ### Parameters
 
-Parameters define the possible configuration values that SFO can experiment with, like the amount of memory, number of replicas or different disk storage types.
+Parameters define the possible configuration values that StormForge can experiment with, like the amount of memory, number of replicas or different disk storage types.
 
-As a general rule of thumb **increase the number of trials along with your number of parameters**. The more permutations your experiment is covering the more data points the ML model will need to determine the optimal configurations.
+As a general rule of thumb **increase the number of trials along with your number of parameters**. The more permutations your experiment is covering, the more data points the ML model will need to determine the optimal configurations.
 
 Example:
 
@@ -73,9 +83,9 @@ Example:
 
 ### Patches
 
-Patches instruct the SFO controller how to apply the previously declared parameters to your Kubernetes manifests. This is where SFO's biggest strength is in my opinion as **you can patch everything that is configurable through a Kubernetes manifest**.
+Patches instruct the StormForge controller how to apply the previously declared parameters to your Kubernetes manifests. This is where StormForge's biggest strength is in my opinion as **you can patch everything that is configurable through a Kubernetes manifest**.
 
-It may start with simple things like CPU and memory resource limits. But with more and more extensions coming to Kubernetes lately the possibilities are endless. One example I can imagine is using [Crossplane](https://crossplane.io/){:target="_blank"} to cycle through VM types of different cloud providers and see on which your application performs best.
+It may start with simple things like CPU and memory resource limits. But with more and more extensions coming to Kubernetes lately the possibilities are endless. One example I can imagine is using [Crossplane](https://crossplane.io/){:target="_blank"} to cycle through VM types of different cloud providers and see on which one your application performs best.
 
 Example:
 
@@ -96,9 +106,9 @@ Example:
 
 ### Trial template
 
-The trial template specifies how your application specific performance measurement looks like. Internally it launches a [Kubernetes Job](https://kubernetes.io/docs/concepts/workloads/controllers/job/){:target="_blank"} which gives you the freedom of using your tool of choice, like [StormForge's in-house load tester](https://www.youtube.com/watch?v=rDpeXWTAdS4){:target="_blank"}, Locust or Gatling.
+The trial template specifies what your application-specific performance measurement looks like. Internally it launches a [Kubernetes Job](https://kubernetes.io/docs/concepts/workloads/controllers/job/){:target="_blank"} which gives you the freedom of using your tool of choice, like [StormForge's own load testing solution](https://www.youtube.com/watch?v=rDpeXWTAdS4){:target="_blank"}, or another tool like Locust or Gatling.
 
-Also you can take care of some preparation tasks like deploying a Helm chart or a dedicated Prometheus instance. Be aware that trial jobs will be executed on the same Kubernetes cluster as your application under test. So make sure to keep room for its potential additional CPU and RAM usage.
+Also you can take care of some preparation tasks like deploying a Helm chart or a dedicated Prometheus instance. Be aware that trial jobs will be executed on the same Kubernetes cluster as your application under test. So be sure to keep room for its potential additional CPU and RAM usage.
 
 Example for a PostgreSQL load test trial template:
 
@@ -122,7 +132,7 @@ Example for a PostgreSQL load test trial template:
 
 ### Metrics
 
-Metrics allow you to define the criteria that you want to gather and/or optimize, e.g. minimizing the costs while maximizing the throughput of your application. SFO comes with certain metrics out of the box, like trial duration but can also query popular monitoring systems like Prometheus or Datadog if you are looking to optimize more specific metrics.
+Metrics allow you to define the criteria that you want to gather and/or optimize, e.g. minimizing the costs while maximizing the throughput of your application. StormForge comes with certain metrics out of the box, like trial duration, but can also query popular monitoring systems like Prometheus or Datadog if you are looking to optimize more specific metrics.
 
 Example:
 
@@ -143,13 +153,13 @@ Example:
 ...
 ```
 
-For more information check out [SFO's documentation](https://docs.stormforge.io/experiment/){:target="_blank"} which covers all these elements in more detail.
+For more information check out [StormForge's documentation](https://docs.stormforge.io/experiment/){:target="_blank"} which covers all these elements in more detail.
 
 ## getting started
 
-With all the concepts clarified let's prepare our application and cluster for the first experiment. To begin with we have to decide on an application that we want to optimize. I went with Apache Cassandra cause I always see it using huge amounts of resources in Kubernetes clusters and wanted to check whether this can be improved.
+With all the concepts clarified let's prepare our application and cluster for the first experiment. To begin with we have to decide on an application that we want to optimize. I went with Apache Cassandra because I always see it using huge amounts of resources in Kubernetes clusters and wanted to check whether this can be improved.
 
-So I went ahead and created a standard _StatefulSet_ that takes care of deploying my Cassandra pods. Additionally we'll need some way of putting load onto the database during the trial job. Luckily Cassandra comes with a tool to do just that called _cassandra-stress_.
+So I went ahead and created a standard _StatefulSet_ that takes care of deploying my Cassandra pods. Additionally we'll need some way of putting load onto the database during the trial job. Luckily, Cassandra comes with a tool to do just that, called _cassandra-stress_.
 
 ```yaml
 ...
@@ -177,13 +187,13 @@ So I went ahead and created a standard _StatefulSet_ that takes care of deployin
 
 As you can see our trial job consists of the following three steps:
 
-- measuring write performance while prepopulating the cluster at the same time
-- measuring mixed (~50:50 read and write) performance
-- dropping the keyspace to make sure each test run starts in a clean environment
+1. measuring write performance while prepopulating the cluster at the same time
+2. measuring mixed (~50:50 read and write) performance
+3. dropping the keyspace to make sure each test run starts in a clean environment
 
-Because we always execute the same number of read and write operations (2 x 10000) simply measuring the time of the trial job to complete will be a good way to judge how our database performs.
+Because we always execute the same number of read and write operations (2 x 10000), simply measuring the time of the trial job to complete will be a good way to judge how our database performs.
 
-With our application good to go, let's quickly prepare our Kubernetes cluster. Assuming you have a connection to it set up, after [installing the `redskyctl` CLI tool](https://docs.stormforge.io/getting-started/install/#installing-the-stormforge-optimize-tool){:target="_blank"} the following commands will deploy the StormForge Optimize controller.
+With our application good to go, let's quickly prepare our Kubernetes cluster. Assuming you have a connection to it set up, after [installing the `redskyctl` CLI tool](https://docs.stormforge.io/getting-started/install/#installing-the-stormforge-optimize-tool){:target="_blank"} the following commands will deploy the StormForge controller.
 
 
 ```bash
@@ -209,7 +219,7 @@ Success.
 
 ## starting simple
 
-After going through the preparation phase we can start with our first experiment. To keep it simple we will start with two parameters (CPU and memory limits) and a single metric (duration of our trial) that we want to optimize. Below you can see the relevant parts of the experiment spec:
+After going through the preparation phase we can start with our first experiment. To keep it simple, we will start with two parameters (CPU and memory limits) and a single metric (duration of our trial) that we want to optimize. Below you can see the relevant parts of the experiment spec:
 
 ```yaml
 ...
@@ -247,13 +257,13 @@ After going through the preparation phase we can start with our first experiment
 ...
 ```
 
-After roughly 1.5 hours we end up with the following chart in the SFO dashboard.
+After roughly 1.5 hours we end up with the following chart in the StormForge dashboard.
 
 {% include image.html url="/static/images/sf-single-metric.png" description="Results of the single metric experiment" %}
 
-As you may have already guessed, the results are not really surprising. The more resources fuel your application, the better it will perform. Who would've thought? Anyway I think this experiment is valuable for the following two reasons.
+As you may have already guessed, the results are not really surprising. The more resources that fuel your application, the better it will perform. Who would've thought? Anyway, I think this experiment is valuable for the following two reasons.
 
-It's a simple showcase to understand how StormForge Optimize works and it helped us **validate our assumptions**. Imagine if Cassandra performed worse with more resources or the trial duration turned out to be completely random. In this case we would know that something in our test setup is messed up. Instead we now can jump onto our first proper experiment with confidence.
+First, it's a simple showcase to understand how StormForge works, and second it helped us **validate our assumptions**. Imagine if Cassandra performed worse with more resources or the trial duration turned out to be completely random. In this case we would know that something in our test setup is messed up. Instead we now can jump onto our first proper experiment with confidence.
 
 ## adding another dimension
 
@@ -300,8 +310,8 @@ Now that we have a chart with more useful information here's an explanation of t
 
 - The blue square represents the result of our baseline configuration, in our case 1 CPU core and 2 GB of RAM which resulted in a trial job duration of 69 seconds.
 - Green circles stand for "normal" trial runs. Those can mostly be ignored as they were outperformed by others.
-- The beige squares show the trial runs that performed well and give you a variety of choices depending on whether you are focussing on either lowering costs or increasing performance.
-- The orange square represents the trial run that SFO selected as the sweet spot, in our case decreasing the costs by 16 % while achieving the same trial run duration.
+- The beige squares show the trial runs that performed well and give you a variety of choices depending on how you prioritize lowering costs versus increasing performance.
+- The orange square represents the trial run that StormForge selected as the sweet spot, in our case decreasing the costs by 16% while achieving the same trial run duration.
 
 TODO
 
