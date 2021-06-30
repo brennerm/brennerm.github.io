@@ -4,6 +4,7 @@ title: Optimizing applications on Kubernetes using Machine Learning
 description: This blog post shows how to optimize Kubernetes deployments using a SaaS product that is based on machine learning.
 category: posts
 tags: kubernetes
+thumbnail: sf-two-metrics.png
 draft: false
 ---
 
