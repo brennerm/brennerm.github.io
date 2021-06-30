@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Optimizing applications on Kubernetes using Machine Learning
-description: Draft
+description: This blog post shows how to optimize Kubernetes deployments using a SaaS product that is based on machine learning.
 category: posts
 tags: kubernetes
 draft: false
@@ -313,12 +313,32 @@ Now that we have a chart with more useful information here's an explanation of t
 - The beige squares show the trial runs that performed well and give you a variety of choices depending on how you prioritize lowering costs versus increasing performance.
 - The orange square represents the trial run that StormForge selected as the sweet spot, in our case decreasing the costs by 16% while achieving the same trial run duration.
 
-TODO
+After selecting the trial run that fits our needs, we can export the new application configuration using the `redskyctl` tool. I'll go with StormForge's recommended trial that **decreased the costs by 16% while achieving the same duration run**.
 
-## horizontal or vertical scaling?
+```yaml
+$ redskyctl export -t \ # export the patched resource
+  -f cassandra.yaml \ # path to the Cassandra STS manifest
+  -f experiment.yaml \ # path to the Experiment manifest
+  cassandra-two-metrics-1-015 # the trial run with our desired configuration
+...
+  resources:
+    limits:
+      cpu: 875m
+      memory: 1000Mi
+    requests:
+      cpu: 875m
+      memory: 1000Mi
+...
+```
 
-TODO
+Comparing this configuration to our baseline values of 1000m CPU shares and 2000Mi memory we were able to save quite a bit of resources. While the CPU improvement is probably based on a bit of wriggle room of the trial run duration, the RAM savings definitely confirm that Cassandra is running perfectly fine with half of our original value.
 
-## summary
+Please be aware that the outcome of StormForge experiments is only meaningful if **your load test is very similar to what your application is being exposed to when running in production**. That's why you should select a load generation tool that is capable of doing so.
+
+## conclusion
+
+So there you have it. A basic example of optimizing Cassandra on Kubernetes by letting software take care of tedious and repetitive tasks and thereby figuring out to which position certain knobs should be set. Of course this example could have been extended endlessly by adding more and more parameters, like JVM heap size, different disk types or various compression algorithms.
+
+But as all of those very much depend on your use case and the capabilities of your infrastructure, I'd be very happy if you are able to do that on your own using StormForge after reading this blog post. If there are any open questions, feel free to [reach out to them](https://www.stormforge.io/company/contact-us/){:target="_blank"}.
 
 ---
