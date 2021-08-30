@@ -154,7 +154,7 @@ Example:
 ...
 ```
 
-For more information check out [StormForge's documentation](https://docs.stormforge.io/experiment/){:target="_blank"} which covers all these elements in more detail.
+For more information check out [StormForge's documentation](https://docs.stormforge.io/optimize/reference/experiment/v1beta2/){:target="_blank"} which covers all these elements in more detail.
 
 ## getting started
 
