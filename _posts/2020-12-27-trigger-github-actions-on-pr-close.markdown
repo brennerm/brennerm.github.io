@@ -3,6 +3,7 @@ layout: post
 title: Github Actions workflow for merged/closed PRs
 description: A little guide on how to trigger Github Actions workflows when a PR has been closed while distinguishing whether is has been merged or not.
 category: posts
+tags: github-actions
 draft: false
 ---
 
