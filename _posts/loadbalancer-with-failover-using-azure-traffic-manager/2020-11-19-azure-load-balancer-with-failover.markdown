@@ -90,27 +90,27 @@ $ az network traffic-manager endpoint update -g my-traffic-manager --profile-nam
 This simulates an outage of our primary endpoint and after a short amount of time the following happens.
 
 ```bash
-$ while 1; do host brennerm.github.io my-traffic-manager-profile.trafficmanager.net; sleep 1; done
+$ while 1; do host shipit.dev my-traffic-manager-profile.trafficmanager.net; sleep 1; done
 ...
 Using domain server:
 Name: my-traffic-manager-profile.trafficmanager.net
 Address: 1.1.1.1#53
 Aliases:
 
-brennerm.github.io has address 185.199.109.153
-brennerm.github.io has address 185.199.110.153
-brennerm.github.io has address 185.199.108.153
-brennerm.github.io has address 185.199.111.153
+shipit.dev has address 185.199.109.153
+shipit.dev has address 185.199.110.153
+shipit.dev has address 185.199.108.153
+shipit.dev has address 185.199.111.153
 
 Using domain server:
 Name: my-traffic-manager-profile.trafficmanager.net
 Address: 8.8.8.8#53 # notice that the IP changed
 Aliases:
 
-brennerm.github.io has address 185.199.109.153
-brennerm.github.io has address 185.199.111.153
-brennerm.github.io has address 185.199.110.153
-brennerm.github.io has address 185.199.108.153
+shipit.dev has address 185.199.109.153
+shipit.dev has address 185.199.111.153
+shipit.dev has address 185.199.110.153
+shipit.dev has address 185.199.108.153
 ...
 ```
 

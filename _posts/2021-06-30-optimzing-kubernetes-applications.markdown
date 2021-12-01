@@ -16,7 +16,7 @@ Manually optimizing an application on Kubernetes is hard, especially if your goa
 
 Additionally without a lot of testing and monitoring effort it's very difficult to determine the "correct" specs for your deployments. It requires extensive trial and error to push your application into the area where it still performs without being overprovisioned.
 
-Otherwise you'll end up wasting resources (and thus [money](https://brennerm.github.io/posts/wasting-money-with-kubernetes.html){:target="_blank"}) or with a system that falls apart as load increases. That's why I decided to take a look at StormForge, a tool that aims to solve this problem without occupying endless amounts of engineering time called StormForge Optimize.
+Otherwise you'll end up wasting resources (and thus [money](https://shipit.dev/posts/wasting-money-with-kubernetes.html){:target="_blank"}) or with a system that falls apart as load increases. That's why I decided to take a look at StormForge, a tool that aims to solve this problem without occupying endless amounts of engineering time called StormForge Optimize.
 
 ## Optimizing with StormForge
 

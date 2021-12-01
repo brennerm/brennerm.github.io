@@ -18,7 +18,7 @@ This language is used to define structures for further use. It's syntax shows si
 Let's have a look at it:
 
 {% highlight text %}
-const blogUrl :Text = "brennerm.github.io/"; 
+const blogUrl :Text = "shipit.dev/";
 
 enum Language {
 	en @0;

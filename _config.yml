@@ -2,7 +2,7 @@ markdown: kramdown
 permalink: /:categories/:title.html
 highlighter: rouge
 name: Max Brenner
-url: https://brennerm.github.io
+url: https://shipit.dev
 twitter: __brennerm
 sass:
   style: compressed
