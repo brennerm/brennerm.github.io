@@ -64,7 +64,7 @@ If you read my first self-employment blog post you may remember me not being sur
 
 Paying a high fee just to be able to get money onto your bank account hurts. Especially if you make the calculation back to the amount of time you spent to earn it in the first place. Working 3 days a month just for a bank transfer is a very unsatisfying feeling.
 
-Lessons learned: Clarify how you'll get paid before joining a client. With platforms like [Wise*](https://wise.com/invite/u/maximilianb339){:target="_blank"} (formerly: TransferWise) it can be very easy and cheap to pay and get paid from people all across the globe. But in certain countries their service isn't available (yet). There are alternatives. But expect them to be (way) more expensive.
+Lessons learned: Clarify how you'll get paid before joining a client. With platforms like [Wise*](https://wise.com/register/?utm_source=url&utm_medium=invite&utm_content=&utm_campaign=3for50&referralCode=maximilianb339&referralToken=maximilianb339&profileType=PERSONAL){:target="_blank"} (formerly: TransferWise) it can be very easy and cheap to pay and get paid from people all across the globe. But in certain countries their service isn't available (yet). There are alternatives. But expect them to be (way) more expensive.
 
 _* affiliate link_
 
