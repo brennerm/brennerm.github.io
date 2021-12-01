@@ -16,7 +16,7 @@ Manually optimizing an application on Kubernetes is hard, especially if your goa
 
 Additionally without a lot of testing and monitoring effort it's very difficult to determine the "correct" specs for your deployments. It requires extensive trial and error to push your application into the area where it still performs without being overprovisioned.
 
-Otherwise you'll end up wasting resources (and thus [money](https://shipit.dev/posts/wasting-money-with-kubernetes.html){:target="_blank"}) or with a system that falls apart as load increases. That's why I decided to take a look at StormForge, a tool that aims to solve this problem without occupying endless amounts of engineering time called StormForge Optimize.
+Otherwise you'll end up wasting resources (and thus [money](/posts/wasting-money-with-kubernetes.html){:target="_blank"}) or with a system that falls apart as load increases. That's why I decided to take a look at StormForge, a tool that aims to solve this problem without occupying endless amounts of engineering time called StormForge Optimize.
 
 ## Optimizing with StormForge
 
@@ -194,7 +194,7 @@ As you can see our trial job consists of the following three steps:
 
 Because we always execute the same number of read and write operations (2 x 10000), simply measuring the time of the trial job to complete will be a good way to judge how our database performs.
 
-With our application good to go, let's quickly prepare our Kubernetes cluster. Assuming you have a connection to it set up, after [installing the `redskyctl` CLI tool](https://docs.stormforge.io/getting-started/install/#installing-the-stormforge-optimize-tool){:target="_blank"} the following commands will deploy the StormForge controller.
+With our application good to go, let's quickly prepare our Kubernetes cluster. Assuming you have a connection to it set up, after [installing the `redskyctl` CLI tool](https://docs.stormforge.io/optimize/getting-started/install/#installing-the-stormforge-optimize-tool){:target="_blank"} the following commands will deploy the StormForge controller.
 
 
 ```bash

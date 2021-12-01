@@ -6,7 +6,7 @@ category: posts
 tags: cdk8s flux gitops kubernetes
 draft: false
 ---
-After I got used to [cdk8s](https://shipit.dev/posts/cdk8s-the-future-of-k8s-application-deployments.html) I was curious how well it integrates with some current continuous delivery tools for Kubernetes. Therefore I sat down for a quick session for integrating it with [Flux](https://docs.fluxcd.io). I will give you a short introduction for both tools to make sure you understand everything when we put them together. If you are already familiar with cdk8s and Flux you can probably skip the next two sections.
+After I got used to [cdk8s](/posts/cdk8s-the-future-of-k8s-application-deployments.html) I was curious how well it integrates with some current continuous delivery tools for Kubernetes. Therefore I sat down for a quick session for integrating it with [Flux](https://docs.fluxcd.io). I will give you a short introduction for both tools to make sure you understand everything when we put them together. If you are already familiar with cdk8s and Flux you can probably skip the next two sections.
 
 ## Flux
 
@@ -33,7 +33,7 @@ k8s.Deployment(self, 'deployment',
 
 Out of this code cdk8s is able to generate valid manifest file(s).
 
-If you wanna get a more detailed introduction feel free to check out [my last blog post](https://shipit.dev/posts/cdk8s-the-future-of-k8s-application-deployments.html).
+If you wanna get a more detailed introduction feel free to check out [my last blog post](/posts/cdk8s-the-future-of-k8s-application-deployments.html).
 
 ## Putting them together
 

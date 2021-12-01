@@ -16,7 +16,7 @@ To control Argo CD it ships with a CLI tool and a really nice web UI, that allow
 
 ## Preparation
 
-If you want to follow along you gonna need a running Argo CD instance. Feel free to use [my snippet](https://gitlab.com/snippets/1967592) to set one up within 5 minutes. Otherwise go through the official [Getting Started](https://argoproj.github.io/argo-cd/getting_started/) guide.
+If you want to follow along you gonna need a running Argo CD instance. Feel free to use [my snippet](https://gitlab.com/snippets/1967592) to set one up within 5 minutes. Otherwise go through the official [Getting Started](https://argo-cd.readthedocs.io/en/stable/getting_started/) guide.
 
 In case you are not familiar with cdk8s make sure to check out [this little rundown](integrating-cdk8s-with-flux.html#cdk8s) or [my dedicated blog post](cdk8s-the-future-of-k8s-application-deployments.html) that goes into more detail. Otherwise let's dive right into the action.
 
