@@ -146,11 +146,14 @@ body {
     color: var(--main-text-color);
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     font-weight: 400;
+    font-size: 20px;
 }
 
 .content h4 a {
     color: var(--main-text-color);
     text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .content p {
