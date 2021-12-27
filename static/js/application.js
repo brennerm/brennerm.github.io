@@ -70,18 +70,23 @@ function enableDarkMode(clearCache=false) {
 }
 
 function loadUtterances(darkMode=false) {
-    const commentsContainer = document.getElementById("comments");
-    if (commentsContainer !== null) {
-        commentsContainer.innerHTML = ''
-        const utterancesScript = document.createElement("script");
-        utterancesScript.setAttribute("id", "utterances");
-        utterancesScript.setAttribute("src", "https://utteranc.es/client.js");
-        utterancesScript.setAttribute("repo", "brennerm/brennerm.github.io-comments");
-        utterancesScript.setAttribute("issue-term", "pathname");
-        utterancesScript.setAttribute("theme", darkMode ? "github-dark" : "github-light");
-        utterancesScript.setAttribute("crossorigin", "anonymous");
-        utterancesScript.setAttribute("async", "true");
+    const giscusContainer = document.getElementById("comments-giscus");
+    if (giscusContainer !== null) {
+        giscusContainer.innerHTML = ''
+        const giscusScript = document.createElement("script");
+        giscusScript.setAttribute("id", "giscus");
+        giscusScript.setAttribute("src", "https://giscus.app/client.js");
+        giscusScript.setAttribute("data-repo", "brennerm/brennerm.github.io-comments");
+        giscusScript.setAttribute("data-repo-id", "MDEwOlJlcG9zaXRvcnkzMTg1MTk0ODQ=");
+        giscusScript.setAttribute("data-category", "Announcements");
+        giscusScript.setAttribute("data-category-id", "DIC_kwDOEvw4vM4CAcbV");
+        giscusScript.setAttribute("data-mapping", "pathname");
+        giscusScript.setAttribute("data-reactions-enabled", "1");
+        giscusScript.setAttribute("data-emit-metadata", "0");
+        giscusScript.setAttribute("data-theme", darkMode ? "dark" : "light");
+        giscusScript.setAttribute("crossorigin", "anonymous");
+        giscusScript.setAttribute("async", "true");
 
-        commentsContainer.appendChild(utterancesScript);
+        giscusContainer.appendChild(giscusScript);
     }
 }
