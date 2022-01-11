@@ -90,6 +90,8 @@ It may start with simple things like CPU and memory resource limits. But with mo
 
 Example:
 
+{% raw %}
+
 ```yaml
 ...
   patch: |
@@ -104,6 +106,8 @@ Example:
                 cpu: "{{ .Values.cpu }}m"
 ...
 ```
+
+{% endraw %}
 
 ### Trial template
 
@@ -137,6 +141,8 @@ Metrics allow you to define the criteria that you want to gather and/or optimize
 
 Example:
 
+{% raw %}
+
 ```yaml
 ...
   metrics:
@@ -153,6 +159,8 @@ Example:
         component: my-app
 ...
 ```
+
+{% endraw %}
 
 For more information check out [StormForge's documentation](https://docs.stormforge.io/optimize/reference/experiment/v1beta2/){:target="_blank"} which covers all these elements in more detail.
 
@@ -222,6 +230,8 @@ Success.
 
 After going through the preparation phase we can start with our first experiment. To keep it simple, we will start with two parameters (CPU and memory limits) and a single metric (duration of our trial) that we want to optimize. Below you can see the relevant parts of the experiment spec:
 
+{% raw %}
+
 ```yaml
 ...
   parameters:                                                                                                   
@@ -257,6 +267,8 @@ After going through the preparation phase we can start with our first experiment
     query: "{{duration .StartTime .CompletionTime}}"
 ...
 ```
+
+{% endraw %}
 
 After roughly 1.5 hours we end up with the following chart in the StormForge dashboard.
 
