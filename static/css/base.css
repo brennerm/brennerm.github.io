@@ -4,7 +4,7 @@ layout: stylesheet
 
 @charset "UTF-8";
 
-@import "static/css/rouge.css";
+@import "/static/css/rouge.css";
 
 
 body {
