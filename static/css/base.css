@@ -446,6 +446,12 @@ table.rouge-table td.rouge-code {
     padding-left: .5rem;
 }
 
+
+table.rouge-table pre {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .highlight {
     margin: 0;
     background-color: var(--code-background-color);
