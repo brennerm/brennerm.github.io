@@ -5,7 +5,7 @@ description: Sharing the journey of getting my feet wet with indie hacking
 category: posts
 tags: indie-hacking
 draft: false
-thumbnail: steps.jpg
+thumbnail: blockedbycors-backend-traffic.png
 ---
 
 {% include image.html url="/static/images/steps.jpg" height="300px" description="Photo by Jake Hills" source="https://unsplash.com/photos/person-wearing-green-pants-bt-Sc22W-BE" %}
