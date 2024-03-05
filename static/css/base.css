@@ -392,7 +392,7 @@ html[data-theme="dark"] {
     font-size: 0.4em;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 600px) {
     .sidebar {
         position: inherit;
         width: inherit;
