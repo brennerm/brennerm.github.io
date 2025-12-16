@@ -1,0 +1,693 @@
+---
+layout: none
+title: "CV"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.19/src/index.min.js"></script> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com?plugins=typography,container-queries"></script>
+  <style type="text/css" media="print">
+    @page {
+      size: auto;
+      /* auto is the initial value */
+      margin: 0mm;
+      /* this affects the margin in the printer settings */
+    }
+
+    html {
+      background-color: #FFFFFF;
+      margin: 5mm 7.5mm 5mm 7.5mm;
+      /* this affects the margin on the html before sending to printer */
+    }
+
+    body {
+      margin: 5mm 7.5mm 5mm 7.5mm;
+      border: solid #3b82f6 3px !important;
+      border-radius: 10px !important;
+    }
+  </style>
+  <style>
+    /* nunito-sans-latin-wght-normal */
+    @font-face {
+      font-family: 'Nunito Sans Variable';
+      font-style: normal;
+      font-display: swap;
+      font-weight: 200 1000;
+      src: url(https://cdn.jsdelivr.net/fontsource/fonts/nunito-sans:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    body {
+      font-family: 'Nunito Sans Variable', system-ui, -apple-system, sans-serif;
+    }
+
+    .prose {
+      max-width: none !important;
+    }
+
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    @media print {
+      body {
+        height: auto !important;
+        overflow: visible !important;
+      }
+
+      header {
+        display: none !important;
+      }
+
+      .flex.h-full {
+        height: auto !important;
+        display: block !important;
+      }
+
+      .flex-1.overflow-y-auto,
+      .lg\:overflow-hidden {
+        overflow: visible !important;
+        height: auto !important;
+      }
+
+      aside {
+        overflow: visible !important;
+        height: auto !important;
+        page-break-inside: avoid;
+        border-right: none !important;
+        border-bottom: 1px solid #e2e8f0 !important;
+        box-shadow: none !important;
+      }
+
+      main {
+        overflow: visible !important;
+        height: auto !important;
+      }
+
+      .lg\:overflow-y-auto {
+        overflow: visible !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="h-screen bg-gradient-to-br from-slate-50 via-slate-100 to-blue-50 text-slate-900 overflow-hidden">
+  <div class="flex h-full flex-col">
+    <header class="sticky top-0 z-20 border-b border-slate-200 bg-white/95 px-6 py-4 backdrop-blur-md shadow-sm">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="setLanguage('en')" id="lang-en"
+            class="px-3 py-1.5 text-sm font-medium rounded-lg transition bg-blue-500 text-white">
+            EN
+          </button>
+          <button type="button" onclick="setLanguage('de')" id="lang-de"
+            class="px-3 py-1.5 text-sm font-medium rounded-lg transition bg-slate-200 text-slate-700 hover:bg-slate-300">
+            DE
+          </button>
+        </div>
+        <button type="button" id="download-btn"
+          class="rounded-xl border border-blue-500 bg-blue-500 px-5 py-2 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-blue-600 hover:border-blue-600 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-pdf">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+            <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+            <path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+            <path d="M17 18h2" />
+            <path d="M20 15h-3v6" />
+            <path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" />
+          </svg>
+          Download PDF
+        </button>
+      </div>
+    </header>
+    <div id="content" class="flex flex-1 overflow-y-auto lg:overflow-hidden flex-col lg:flex-row">
+      <aside
+        class="flex basis-auto lg:basis-[420px] flex-col gap-6 border-b lg:border-b-0 lg:border-r border-slate-200 bg-gradient-to-br from-white via-slate-50 to-blue-50/30 p-8 shadow-xl lg:overflow-y-auto">
+        <div class="flex gap-4 items-center">
+          <div
+            class="w-32 h-32 flex-shrink-0 rounded-full bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 flex items-center justify-center text-white text-4xl font-bold shadow-2xl ring-4 ring-white ring-opacity-50">
+            MB
+          </div>
+          <div class="space-y-2 flex-1 min-w-0">
+            <p class="uppercase tracking-[0.4em] text-xs text-blue-500" data-i18n="cv-title">Curriculum Vitae</p>
+            <h1 class="font-display text-2xl font-semibold text-slate-900">Max Brenner</h1>
+            <p class="text-sm text-slate-700" data-i18n="job-title">Freelance DevOps Engineer</p>
+            <p class="text-sm text-slate-600" data-i18n="location">Münster, Germany</p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <h2 class="text-xs font-semibold uppercase tracking-[0.4em] text-blue-500" data-i18n="contact">Contact</h2>
+          <p><a href="https://shipit.dev">https://shipit.dev</a></p>
+          <p><a href="mailto:max@shipit.dev">max@shipit.dev</a></p>
+          <p><a href="https://github.com/brennerm" target="_blank" rel="noopener noreferrer">github.com/brennerm</a></p>
+        </div>
+        <div class="space-y-3">
+          <h2 class="text-xs font-semibold uppercase tracking-[0.4em] text-blue-500" data-i18n="skills">Skills</h2>
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li><span class="font-semibold text-slate-900">Azure:</span> Virtual Machines, AKS, API Management,
+              Container Instances, Functions, Key Vault, ...</li>
+            <li><span class="font-semibold text-slate-900">AWS:</span> EC2, ECS, EKS, IAM, CloudWatch, Route 53, ...
+            </li>
+            <li><span class="font-semibold text-slate-900">Container:</span> Kubernetes, Docker, Docker Compose</li>
+            <li><span class="font-semibold text-slate-900">GitOps:</span> Argo CD, Flux CD</li>
+            <li><span class="font-semibold text-slate-900">IaC:</span> Ansible, Terraform, OpenTofu, Helm</li>
+            <li><span class="font-semibold text-slate-900">Monitoring:</span> Prometheus, Grafana, ELK, TICK</li>
+            <li><span class="font-semibold text-slate-900">CI/CD:</span> Github Actions, Azure DevOps, Jenkins, Gitlab
+              CI</li>
+            <li><span class="font-semibold text-slate-900">Dev:</span> HTML/CSS/JS, Svelte/SvelteKit, Python, Java,
+              Kotlin, Golang, Bash</li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h2 class="text-xs font-semibold uppercase tracking-[0.4em] text-blue-500" data-i18n="languages">Languages
+          </h2>
+          <p class="text-slate-700" data-i18n="german-native">German (Native)</p>
+          <p class="text-slate-700" data-i18n="english-fluent">English (Fluent)</p>
+        </div>
+        <div class="space-y-3">
+          <h2 class="text-xs font-semibold uppercase tracking-[0.4em] text-blue-500" data-i18n="hobbies">Hobbies</h2>
+          <ul class="space-y-1 text-sm text-slate-600">
+            <li data-i18n="hobby-road-cycling">Road cycling</li>
+            <li data-i18n="hobby-opensource">Open-source tinkering</li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="flex-1 lg:overflow-y-auto bg-slate-100">
+
+        <main class="mx-auto flex max-w-3xl flex-col gap-8 px-6 py-10 text-slate-900">
+          <section
+            class="space-y-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(15,23,42,0.12)] transition-shadow duration-300">
+            <h2 class="text-xl font-semibold text-blue-500" data-i18n="profile">PROFILE</h2>
+            <div class="prose space-y-4">
+              <p class="text-slate-700" data-i18n="profile-intro">After gaining several years of experience in the
+                DevOps field, I decided to pursue my path as an IT freelancer. Through this, I hope to make it
+                significantly easier for a variety of partners to take steps into and within the cloud.</p>
+
+              <p class="text-slate-700" data-i18n="profile-services-intro">This can mean for me:</p>
+
+              <ul class="list-disc ml-6 space-y-2 text-slate-700">
+                <li data-i18n="service1">Migrating a production application to the cloud</li>
+                <li data-i18n="service2">Planning and initial setup of a complete new development</li>
+                <li data-i18n="service3">Converting a classic application to a cloud-native application</li>
+                <li data-i18n="service4">Training your staff in many topics in the cloud environment</li>
+              </ul>
+
+              <p class="text-slate-700" data-i18n="profile-more">and much more.</p>
+
+              <p class="text-slate-700" data-i18n="profile-contact">I look forward to hearing from you and supporting
+                you in your cloud endeavors.</p>
+
+              <p class="text-slate-600 text-xs italic" data-i18n="profile-disclaimer">Please refrain from project
+                inquiries from the military, gambling, tobacco, banking and insurance industries. Thank you</p>
+            </div>
+          </section>
+
+          <section
+            class="space-y-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(15,23,42,0.12)] transition-shadow duration-300">
+            <h2 class="text-xl font-semibold text-blue-500" data-i18n="work-experience">WORK EXPERIENCE</h2>
+
+            <!-- Project 1 -->
+            <article
+              class="space-y-3 pb-6 mb-6 border-b border-slate-200 last:border-0 last:pb-0 last:mb-0 hover:bg-slate-50/50 -mx-4 px-4 py-4 rounded-xl transition-colors duration-200">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div class="flex-1">
+                  <p class="text-base font-semibold text-slate-900" data-i18n="proj1-title">DevOps Engineer</p>
+                  <p class="text-sm text-slate-600" data-i18n="proj1-company">American Internet Provider</p>
+                  <p class="text-xs text-slate-500" data-i18n="proj1-industry">Internet and Information Technology ·
+                    500-1000 employees</p>
+                </div>
+                <span class="text-sm text-slate-400" data-i18n="proj1-period">02/2023 — Present</span>
+              </div>
+              <p class="text-sm text-slate-700" data-i18n="proj1-desc">Setting up a monitoring stack, deploying various
+                PoCs for technology evaluation</p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Google
+                  Cloud</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Kubernetes</span>
+                <span
+                  class="px-2.5 py-1 text-xs font-medium rounded-full bg-blue-100 text-blue-700">Grafana/Prometheus</span>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article
+              class="space-y-3 pb-6 mb-6 border-b border-slate-200 last:border-0 last:pb-0 last:mb-0 hover:bg-slate-50/50 -mx-4 px-4 py-4 rounded-xl transition-colors duration-200">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div class="flex-1">
+                  <p class="text-base font-semibold text-slate-900" data-i18n="proj2-title">DevOps Engineer</p>
+                  <p class="text-sm text-slate-600" data-i18n="proj2-company">Software Provider in Education Sector</p>
+                  <p class="text-xs text-slate-500" data-i18n="proj2-industry">Internet and Information Technology ·
+                    10-50 employees</p>
+                </div>
+                <span class="text-sm text-slate-400" data-i18n="proj2-period">02/2022 — Present</span>
+              </div>
+              <p class="text-sm text-slate-700" data-i18n="proj2-desc">Sole setup of a cloud environment with a European
+                cloud provider</p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Kubernetes</span>
+                <span
+                  class="px-2.5 py-1 text-xs font-medium rounded-full bg-blue-100 text-blue-700">Terraform/OpenTofu</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Docker</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Grafana</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Prometheus</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Loki</span>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article
+              class="space-y-3 pb-6 mb-6 border-b border-slate-200 last:border-0 last:pb-0 last:mb-0 hover:bg-slate-50/50 -mx-4 px-4 py-4 rounded-xl transition-colors duration-200">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div class="flex-1">
+                  <p class="text-base font-semibold text-slate-900" data-i18n="proj3-title">DevOps Engineer</p>
+                  <p class="text-sm text-slate-600" data-i18n="proj3-company">IoT Hardware and Software Manufacturer</p>
+                  <p class="text-xs text-slate-500" data-i18n="proj3-industry">Pharma and Medical Technology · 10-50
+                    employees</p>
+                </div>
+                <span class="text-sm text-slate-400" data-i18n="proj3-period">02/2022 — Present</span>
+              </div>
+              <p class="text-sm text-slate-700" data-i18n="proj3-desc">Migration, maintenance and further development of
+                a platform for 20+ microservices</p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">AWS
+                  EC2</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">ECS</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Route53</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">ALB/NLB</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Terraform</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Gitlab
+                  CI</span>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article
+              class="space-y-3 pb-6 mb-6 border-b border-slate-200 last:border-0 last:pb-0 last:mb-0 hover:bg-slate-50/50 -mx-4 px-4 py-4 rounded-xl transition-colors duration-200">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div class="flex-1">
+                  <p class="text-base font-semibold text-slate-900" data-i18n="proj4-title">Cloud Consultant</p>
+                  <p class="text-sm text-slate-600" data-i18n="proj4-company">Kubernetes Consulting Agency</p>
+                  <p class="text-xs text-slate-500" data-i18n="proj4-industry">Internet and Information Technology ·
+                    10-50 employees</p>
+                </div>
+                <span class="text-sm text-slate-400" data-i18n="proj4-period">01/2021 — 02/2025</span>
+              </div>
+              <p class="text-sm text-slate-700" data-i18n="proj4-desc">Operating a microservice application on
+                Kubernetes in AWS</p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">AWS</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Kubernetes</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Terraform</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Helm</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Docker</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Github
+                  CI</span>
+              </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article
+              class="space-y-3 pb-6 mb-6 border-b border-slate-200 last:border-0 last:pb-0 last:mb-0 hover:bg-slate-50/50 -mx-4 px-4 py-4 rounded-xl transition-colors duration-200">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div class="flex-1">
+                  <p class="text-base font-semibold text-slate-900" data-i18n="proj5-title">DevOps Engineer</p>
+                  <p class="text-sm text-slate-600" data-i18n="proj5-company">AI Hardware and Software Company</p>
+                  <p class="text-xs text-slate-500" data-i18n="proj5-industry">Internet and Information Technology ·
+                    10-50 employees</p>
+                </div>
+                <span class="text-sm text-slate-400" data-i18n="proj5-period">01/2021 — 02/2025</span>
+              </div>
+              <p class="text-sm text-slate-700" data-i18n="proj5-desc">Building a fleet management platform</p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">AWS</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Ansible</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Github
+                  Actions</span>
+              </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article
+              class="space-y-3 pb-6 mb-6 border-b border-slate-200 last:border-0 last:pb-0 last:mb-0 hover:bg-slate-50/50 -mx-4 px-4 py-4 rounded-xl transition-colors duration-200">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div class="flex-1">
+                  <p class="text-base font-semibold text-slate-900" data-i18n="proj6-title">Cloud Architect</p>
+                  <p class="text-sm text-slate-600" data-i18n="proj6-company">German Energy Corporation</p>
+                  <p class="text-xs text-slate-500" data-i18n="proj6-industry">Energy, Water and Environment · >10,000
+                    employees</p>
+                </div>
+                <span class="text-sm text-slate-400" data-i18n="proj6-period">07/2021 — 11/2021</span>
+              </div>
+              <p class="text-sm text-slate-700" data-i18n="proj6-desc">Migration of an on-premise application to the
+                Azure Cloud</p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Azure
+                  Cloud</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Terraform</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Ansible</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Packer</span>
+              </div>
+            </article>
+
+            <!-- Project 7 -->
+            <article
+              class="space-y-3 pb-6 mb-6 border-b border-slate-200 last:border-0 last:pb-0 last:mb-0 hover:bg-slate-50/50 -mx-4 px-4 py-4 rounded-xl transition-colors duration-200">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div class="flex-1">
+                  <p class="text-base font-semibold text-slate-900" data-i18n="proj7-title">DevOps Engineer / Project
+                    Lead</p>
+                  <p class="text-sm text-slate-600" data-i18n="proj7-company">German Automotive Manufacturer</p>
+                  <p class="text-xs text-slate-500" data-i18n="proj7-industry">Automotive and Vehicle Manufacturing ·
+                    >10,000 employees</p>
+                </div>
+                <span class="text-sm text-slate-400" data-i18n="proj7-period">12/2018 — 12/2020</span>
+              </div>
+              <p class="text-sm text-slate-700" data-i18n="proj7-desc">Development, deployment and operation of a
+                microservice backend application for electric vehicles</p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Azure
+                  Cloud</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Kubernetes</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Terraform</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Azure
+                  DevOps</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Helm</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Docker</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Kotlin</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Spring</span>
+              </div>
+            </article>
+
+            <!-- Project 8 -->
+            <article
+              class="space-y-3 pb-6 mb-6 border-b border-slate-200 last:border-0 last:pb-0 last:mb-0 hover:bg-slate-50/50 -mx-4 px-4 py-4 rounded-xl transition-colors duration-200">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div class="flex-1">
+                  <p class="text-base font-semibold text-slate-900" data-i18n="proj8-title">DevOps Engineer</p>
+                  <p class="text-sm text-slate-600" data-i18n="proj8-company">Rohde & Schwarz</p>
+                  <p class="text-xs text-slate-500" data-i18n="proj8-industry">Internet and Information Technology ·
+                    >10,000 employees</p>
+                </div>
+                <span class="text-sm text-slate-400" data-i18n="proj8-period">10/2015 — 11/2018</span>
+              </div>
+              <p class="text-sm text-slate-700" data-i18n="proj8-desc">Setting up and managing internal infrastructure
+                and service landscape. Installation of hardware and software components at customer sites.</p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Ansible</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Proxmox</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Cisco</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Checkmk</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Nagios</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Icinga</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">ELK-Stack</span>
+                <span
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">TICK-Stack</span>
+              </div>
+            </article>
+          </section>
+
+          <section
+            class="grid gap-6 rounded-3xl border border-slate-200 bg-white p-8 md:grid-cols-2 shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(15,23,42,0.12)] transition-shadow duration-300">
+            <div class="space-y-3">
+              <h2 class="text-xl font-semibold text-blue-500" data-i18n="education">EDUCATION</h2>
+              <p class="text-sm text-slate-700" data-i18n="education-degree">B.Sc. Computer Science — State Academy of
+                Learning – Leipzig</p>
+            </div>
+            <div class="space-y-3">
+              <h2 class="text-xl font-semibold text-blue-500" data-i18n="projects">PROJECTS &amp; WRITING</h2>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li data-i18n="project1">Kubernetes diagrams library explaining service topologies to users.</li>
+                <li data-i18n="project2">CDK8s + GitOps deep dives outlining ArgoCD workflows.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section
+            class="space-y-4 rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_20px_60px_rgba(15,23,42,0.12)] transition-shadow duration-300">
+            <h2 class="text-xl font-semibold text-blue-500" data-i18n="values">VALUES</h2>
+            <div class="prose">
+              <p class="text-slate-700" data-i18n="values-desc">Honest communication, quick results based on an
+                iterative approach</p>
+              </p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const translations = {
+      en: {
+        'download-pdf': 'Download PDF',
+        'cv-title': 'Curriculum Vitae',
+        'job-title': 'Freelance DevOps Engineer',
+        'contact': 'Contact',
+        'location': 'Münster, Germany',
+        'skills': 'Skills',
+        'languages': 'Languages',
+        'english-fluent': 'English (Fluent)',
+        'german-native': 'German (Native)',
+        'hobbies': 'Hobbies',
+        'hobby-road-cycling': 'Road cycling',
+        'hobby-opensource': 'Open-source tinkering',
+        'profile': 'PROFILE',
+        'profile-intro': 'After gaining several years of experience in the DevOps field, I decided to pursue my path as an IT freelancer. Through this, I hope to make it significantly easier for a variety of partners to take steps into and within the cloud.',
+        'profile-services-intro': 'This can mean for me:',
+        'service1': 'Migrating a production application to the cloud',
+        'service2': 'Planning and initial setup of a complete new development',
+        'service3': 'Converting a classic application to a cloud-native application',
+        'service4': 'Training your staff in many topics in the cloud environment',
+        'profile-more': 'and much more.',
+        'profile-contact': 'I look forward to hearing from you and supporting you in your cloud endeavors.',
+        'profile-disclaimer': 'Please refrain from project inquiries from the military, gambling, tobacco, banking and insurance industries. Thank you',
+        'work-experience': 'WORK EXPERIENCE',
+        'proj1-title': 'DevOps Engineer',
+        'proj1-company': 'American Internet Provider',
+        'proj1-industry': 'Internet and Information Technology · 500-1000 employees',
+        'proj1-period': '02/2023 — Present',
+        'proj1-desc': 'Setting up a monitoring stack, deploying various PoCs for technology evaluation',
+        'proj2-title': 'DevOps Engineer',
+        'proj2-company': 'Software Provider in Education Sector',
+        'proj2-industry': 'Internet and Information Technology · 10-50 employees',
+        'proj2-period': '02/2022 — Present',
+        'proj2-desc': 'Sole setup of a cloud environment with a European cloud provider',
+        'proj3-title': 'DevOps Engineer',
+        'proj3-company': 'IoT Hardware and Software Manufacturer',
+        'proj3-industry': 'Pharma and Medical Technology · 10-50 employees',
+        'proj3-period': '02/2022 — Present',
+        'proj3-desc': 'Migration, maintenance and further development of a platform for 20+ microservices',
+        'proj4-title': 'Cloud Consultant',
+        'proj4-company': 'Kubernetes Consulting Agency',
+        'proj4-industry': 'Internet and Information Technology · 10-50 employees',
+        'proj4-period': '01/2021 — 02/2025',
+        'proj4-desc': 'Operating a microservice application on Kubernetes in AWS',
+        'proj5-title': 'DevOps Engineer',
+        'proj5-company': 'AI Hardware and Software Company',
+        'proj5-industry': 'Internet and Information Technology · 10-50 employees',
+        'proj5-period': '01/2021 — 02/2025',
+        'proj5-desc': 'Building a fleet management platform',
+        'proj6-title': 'Cloud Architect',
+        'proj6-company': 'German Energy Corporation',
+        'proj6-industry': 'Energy, Water and Environment · >10,000 employees',
+        'proj6-period': '07/2021 — 11/2021',
+        'proj6-desc': 'Migration of an on-premise application to the Azure Cloud',
+        'proj7-title': 'DevOps Engineer / Project Lead',
+        'proj7-company': 'German Automotive Manufacturer',
+        'proj7-industry': 'Automotive and Vehicle Manufacturing · >10,000 employees',
+        'proj7-period': '12/2018 — 12/2020',
+        'proj7-desc': 'Development, deployment and operation of a microservice backend application for electric vehicles',
+        'proj8-title': 'DevOps Engineer',
+        'proj8-company': 'Rohde & Schwarz',
+        'proj8-industry': 'Internet and Information Technology · >10,000 employees',
+        'proj8-period': '10/2015 — 11/2018',
+        'proj8-desc': 'Setting up and managing internal infrastructure and service landscape. Installation of hardware and software components at customer sites.',
+        'education': 'EDUCATION',
+        'education-degree': 'B.Sc. Computer Science — State Academy of Learning – Leipzig',
+        'projects': 'PROJECTS & WRITING',
+        'project1': 'Kubernetes diagrams library explaining service topologies to users.',
+        'project2': 'CDK8s + GitOps deep dives outlining ArgoCD workflows.',
+        'values': 'VALUES',
+        'values-desc': 'Honest communication, quick results based on an iterative approach'
+      },
+      de: {
+        'download-pdf': 'PDF Herunterladen',
+        'cv-title': 'Lebenslauf',
+        'job-title': 'Freiberuflicher DevOps Engineer',
+        'contact': 'Kontakt',
+        'location': 'Münster, Deutschland',
+        'skills': 'Fähigkeiten',
+        'languages': 'Sprachen',
+        'english-fluent': 'Englisch (Fließend)',
+        'german-native': 'Deutsch (Muttersprache)',
+        'hobbies': 'Hobbys',
+        'hobby-road-cycling': 'Radsport',
+        'hobby-opensource': 'Open-Source-Projekte',
+        'profile': 'PROFIL',
+        'profile-intro': 'Nach dem Sammeln mehrjähriger Erfahrung im DevOps-Bereich habe ich mich entschieden meinen Weg als IT-Freelancer einzuschlagen. Dadurch erhoffe ich mir einer Vielzahl von Partnern die Schritte in die und innerhalb der Cloud deutlich zu erleichtern.',
+        'profile-services-intro': 'Dies kann für mich bedeuten:',
+        'service1': 'Die Migration einer produktiven Anwendung in die Cloud',
+        'service2': 'Die Planung und das initiale Aufsetzen einer kompletten Neuentwicklung',
+        'service3': 'Die Konvertierung einer klassischen in eine cloud-native Anwendung',
+        'service4': 'Die Schulung Ihres Personals in vielen Themen im Cloud-Umfeld',
+        'profile-more': 'und vieles mehr.',
+        'profile-contact': 'Ich freue mich von Ihnen zu hören und Sie bei Ihren Vorhaben in der Cloud zu unterstützen.',
+        'profile-disclaimer': 'Ich bitte Sie von Projektanfragen aus den Branchen Militär, Glücksspiel, Tabak, Banken und Versicherungen abzusehen. Vielen Dank',
+        'work-experience': 'BERUFSERFAHRUNG',
+        'proj1-title': 'DevOps Engineer',
+        'proj1-company': 'Amerikanischer Internetanbieter',
+        'proj1-industry': 'Internet und Informationstechnologie · 500-1000 Mitarbeiter',
+        'proj1-period': '02/2023 — bis heute',
+        'proj1-desc': 'Aufsetzen eines Monitoring Stacks, Deployments verschiedener PoCs zur Technologieevaluierung',
+        'proj2-title': 'DevOps Engineer',
+        'proj2-company': 'Softwareanbieter im Bildungssektor',
+        'proj2-industry': 'Internet und Informationstechnologie · 10-50 Mitarbeiter',
+        'proj2-period': '02/2022 — bis heute',
+        'proj2-desc': 'Alleiniger Neuaufbau einer Cloudumgebung mit einem europäischen Cloudanbieter',
+        'proj3-title': 'DevOps Engineer',
+        'proj3-company': 'IoT Hard- und Softwarehersteller',
+        'proj3-industry': 'Pharma und Medizintechnik · 10-50 Mitarbeiter',
+        'proj3-period': '02/2022 — bis heute',
+        'proj3-desc': 'Migration, Wartung und Weiterentwicklung einer Platform für 20+ Microservices',
+        'proj4-title': 'Cloud Consultant',
+        'proj4-company': 'Kubernetes Consulting Agentur',
+        'proj4-industry': 'Internet und Informationstechnologie · 10-50 Mitarbeiter',
+        'proj4-period': '01/2021 — 27.02.2025',
+        'proj4-desc': 'Betreiben einer Microservice Anwendung auf Kubernetes in AWS',
+        'proj5-title': 'DevOps Engineer',
+        'proj5-company': 'AI Hard- und Softwarefirma',
+        'proj5-industry': 'Internet und Informationstechnologie · 10-50 Mitarbeiter',
+        'proj5-period': '01/2021 — 27.02.2025',
+        'proj5-desc': 'Aufbauen einer Fleet Management Plattform',
+        'proj6-title': 'Cloud Architect',
+        'proj6-company': 'Deutscher Energiekonzern',
+        'proj6-industry': 'Energie, Wasser und Umwelt · >10.000 Mitarbeiter',
+        'proj6-period': '07/2021 — 01.11.2021',
+        'proj6-desc': 'Migration einer On-Premise Anwendung in die Azure Cloud',
+        'proj7-title': 'DevOps Engineer / Projektleitung',
+        'proj7-company': 'Deutscher Automobilhersteller',
+        'proj7-industry': 'Automobil und Fahrzeugbau · >10.000 Mitarbeiter',
+        'proj7-period': '12/2018 — 01.12.2020',
+        'proj7-desc': 'Entwicklung, Deployment und Betrieb einer Microservice-Backendapplikation für Elektrofahrzeuge',
+        'proj8-title': 'DevOps Engineer',
+        'proj8-company': 'Rohde & Schwarz',
+        'proj8-industry': 'Internet und Informationstechnologie · >10.000 Mitarbeiter',
+        'proj8-period': '10/2015 — 01.11.2018',
+        'proj8-desc': 'Aufsetzen und Verwalten der internen Infrastruktur- und Servicelandschaft. Installation von Hard- und Softwarekomponenten beim Kunden vor Ort.',
+        'education': 'AUSBILDUNG',
+        'education-degree': 'B.Sc. Informatik — Studienakademie Leipzig',
+        'projects': 'PROJEKTE & ARTIKEL',
+        'project1': 'Kubernetes-Diagramm-Bibliothek zur Erklärung von Service-Topologien.',
+        'project2': 'CDK8s + GitOps Deep Dives mit ArgoCD-Workflows.',
+        'values': 'WERTE',
+        'values-desc': 'Ehrliche Kommunikation, schnelle Ergebnisse auf Basis einer iterativen Arbeitsweise'
+      }
+    };
+
+    let currentLang = 'de';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+
+      // Update all translatable elements
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+          element.textContent = translations[lang][key];
+        }
+      });
+
+      // Update download button text
+      const downloadBtn = document.getElementById('download-btn');
+      const btnText = downloadBtn.childNodes[downloadBtn.childNodes.length - 1];
+      btnText.textContent = translations[lang]['download-pdf'];
+
+      // Update button states
+      document.getElementById('lang-en').className = lang === 'en'
+        ? 'px-3 py-1.5 text-sm font-medium rounded-lg transition bg-blue-500 text-white'
+        : 'px-3 py-1.5 text-sm font-medium rounded-lg transition bg-slate-200 text-slate-700 hover:bg-slate-300';
+
+      document.getElementById('lang-de').className = lang === 'de'
+        ? 'px-3 py-1.5 text-sm font-medium rounded-lg transition bg-blue-500 text-white'
+        : 'px-3 py-1.5 text-sm font-medium rounded-lg transition bg-slate-200 text-slate-700 hover:bg-slate-300';
+
+      // Save preference
+      localStorage.setItem('cv-language', lang);
+    }
+
+    // Load saved language preference on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('cv-language') || 'en';
+      if (savedLang !== 'en') {
+        setLanguage(savedLang);
+      }
+    });
+
+    // Download PDF button
+    document.getElementById('download-btn').addEventListener('click', () => {
+      window.print();
+    });
+  </script>
+</body>
+
+</html>
