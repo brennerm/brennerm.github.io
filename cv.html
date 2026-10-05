@@ -14,26 +14,6 @@ title: "CV"
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com?plugins=typography,container-queries"></script>
-  <style type="text/css" media="print">
-    @page {
-      size: auto;
-      /* auto is the initial value */
-      margin: 0mm;
-      /* this affects the margin in the printer settings */
-    }
-
-    html {
-      background-color: #FFFFFF;
-      margin: 5mm 7.5mm 5mm 7.5mm;
-      /* this affects the margin on the html before sending to printer */
-    }
-
-    body {
-      margin: 5mm 7.5mm 5mm 7.5mm;
-      border: solid #3b82f6 3px !important;
-      border-radius: 10px !important;
-    }
-  </style>
   <style>
     /* nunito-sans-latin-wght-normal */
     @font-face {
@@ -65,42 +45,87 @@ title: "CV"
     }
 
     @media print {
+      /* Real page margins, so every page (not just the first and last) gets
+         whitespace around the content instead of running to the paper edge */
+      @page {
+        size: A4;
+        margin: 10mm;
+      }
+
+      html {
+        background-color: #FFFFFF;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
       body {
         height: auto !important;
         overflow: visible !important;
+        margin: 0;
+        border: solid #3b82f6 3px !important;
+        border-radius: 10px !important;
+        /* Draw the full border on every page instead of one box split across pages */
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
       }
 
       header {
         display: none !important;
       }
 
-      .flex.h-full {
-        height: auto !important;
+      /* Flex/grid containers fragment poorly across pages, so flatten the
+         layout wrappers to plain blocks */
+      .flex.h-full,
+      #content,
+      main {
         display: block !important;
+        height: auto !important;
+        overflow: visible !important;
       }
 
-      .flex-1.overflow-y-auto,
-      .lg\:overflow-hidden {
+      #content > div {
         overflow: visible !important;
-        height: auto !important;
+      }
+
+      main > section + section {
+        margin-top: 1.5rem;
       }
 
       aside {
         overflow: visible !important;
         height: auto !important;
-        page-break-inside: avoid;
         border-right: none !important;
         border-bottom: 1px solid #e2e8f0 !important;
         box-shadow: none !important;
       }
 
-      main {
-        overflow: visible !important;
-        height: auto !important;
+      section {
+        box-shadow: none !important;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
       }
 
-      .lg\:overflow-y-auto {
-        overflow: visible !important;
+      /* Keep logical units together */
+      aside > div,
+      article,
+      li,
+      p,
+      section.grid,
+      section:last-child {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      h1,
+      h2 {
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+
+      p,
+      li {
+        orphans: 3;
+        widows: 3;
       }
     }
   </style>
