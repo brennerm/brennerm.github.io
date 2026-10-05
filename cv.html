@@ -83,12 +83,20 @@ title: "CV"
         overflow: visible !important;
       }
 
+      /* White backdrop: saves ink and hides Firefox's unclipped card corners
+         at page breaks */
       #content > div {
         overflow: visible !important;
+        background: #FFFFFF !important;
+      }
+
+      main {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
       }
 
       main > section + section {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
       }
 
       aside {
@@ -120,6 +128,21 @@ title: "CV"
       h2 {
         break-after: avoid;
         page-break-after: avoid;
+      }
+
+      /* Firefox ignores break-after: avoid, so reserve room below section
+         headings with an unbreakable spacer: if the heading plus ~120px of
+         content doesn't fit, the heading moves to the next page */
+      main h2 {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      main h2::after {
+        content: "";
+        display: block;
+        height: 120px;
+        margin-bottom: -120px;
       }
 
       p,
