@@ -1,0 +1,487 @@
+@charset "UTF-8";
+
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.sidebar {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    width: 140px;
+    font-family: Helvetica, sans-serif;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar img {
+    padding: 0 3px;
+    border: 0;
+}
+
+.sidebar .avatar {
+    padding: 0;
+    margin-left: 2px;
+    border-radius: 5px;
+}
+
+.sidebar .name {
+    text-transform: uppercase;
+    margin: 10px 0 20px 0;
+}
+
+.sidebar .name .fname {
+    padding-left: 1px;
+    font-size: 23px;
+    letter-spacing: 5px;
+    color: var(--main-text-color);
+}
+
+.sidebar .name .lname {
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--main-text-color);
+}
+
+.sidebar .meta a {
+    margin-left: 0px;
+    color: var(--main-text-color);
+}
+
+.sidebar .meta a:hover {
+    color: #227ce8;
+}
+
+.sidebar .meta {
+    margin-left: 4px;
+    font-size: 17px;
+}
+
+.sidebar .sections {
+    margin: 15px 0 0 0;
+}
+
+.sidebar .sections a {
+    padding: 3px 0;
+    color: var(--main-text-color);
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+}
+
+.sidebar .sections a:hover {
+    color: #227ce8;
+}
+
+.sidebar .sections ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar .sections li {
+    list-style: none;
+    margin-bottom: 7px;
+}
+
+#content-parent {
+    width: calc(100% - 150px);
+    margin-left: 150px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.content {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content h1 {
+    color: var(--main-text-color);
+    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    margin: 18px 0 5px 0;
+}
+
+.content h1 a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.content h2 {
+    color: var(--main-text-color);
+    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.content h2 a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.content h3 {
+    color: var(--main-text-color);
+    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content h3 a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.content h4 {
+    color: var(--main-text-color);
+    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.content h4 a {
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1.2em;
+    line-height: 1.7em;
+}
+
+.content p code {
+    font-size: 12px;
+    background-color: var(--main-background-color);
+    border: 1px solid #777777;
+    border-radius: 3px;
+    padding: 2px 3px;
+}
+
+.content img {
+    padding: 3px;
+    border: 1px solid var(--main-background-color);
+    max-width: 100%;
+}
+
+.content li {
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.content blockquote {
+    font-style: italic;
+    font-size: 14px;
+    padding: .25em 1em;
+    margin: 1em 1em 0 1em;
+    color: var(--light-text-color);
+}
+
+.content blockquote cite:before {
+    content: '— ';
+}
+
+.content blockquote cite {
+    display: block;
+    margin-top: .5em;
+    text-align: right;
+    color: #111;
+    font-style: normal;
+}
+
+.content .byline {
+    margin-bottom: 17px;
+    padding-left: 0px;
+    font-size: 17px;
+    color: #777;
+}
+
+.content .aside {
+    background-color: #eeeeee;
+    padding: 14px;
+    font-size: 14px;
+    margin: 5px 0 15px 0;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.6em;
+}
+
+.content .listing {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.content .listing ul {
+    margin: 0;
+    padding: 0;
+}
+
+.content .listing li {
+    font-size: 16px;
+    list-style: none;
+    padding: 5px 3px;
+    margin: 0;
+    color: var(--light-text-color);
+    border-bottom: 1px solid #eee;
+}
+
+.content .listing a {
+    text-decoration: none;
+}
+
+.content .listing a:hover {
+    text-decoration: underline;
+}
+
+.content .meta {
+    margin: 30px 0;
+    padding: 10px 0;
+}
+
+.content .meta p {
+    line-height: 1.4;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.content .meta img {
+    position: relative;
+    float: left;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-left: -60px;
+    border-radius: 4px;
+}
+
+.content .meta .copy {
+    padding-left: 60px;
+}
+
+.content .meta iframe {
+    padding-left: 5px;
+}
+
+.content .talk-design .color div {
+    float: left;
+    margin-right: 10px;
+    padding: 5px 15px;
+    border: 1px solid #000;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.content .talk-design .color .white {
+    color: #fff;
+}
+
+.content figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.content figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content figcaption {
+    color: var(--light-text-color);
+    font-size: smaller;
+    text-align: center;
+}
+
+.content .taglist {
+    display: inline-block;
+}
+
+@media only screen and (min-width: 750px) {
+    .content .listing li div {
+        float: right;
+    }
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    color: var(--main-text-color);
+}
+
+.contact a:hover {
+    color: rgb(23, 111, 217);
+}
+
+html {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    scrollbar-color: var(--main-text-color);
+    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+}
+
+html a {
+    color: var(--link-color);
+}
+
+html,
+html[data-theme="light"] {
+    --light-text-color: rgb(72, 72, 74);
+    --link-color: rgb(0, 112, 201);
+    --main-background-color: rgb(255, 255, 255);
+    --code-background-color: rgb(198, 198, 198);
+    --main-text-color: rgb(51, 51, 51);
+}
+
+html[data-theme="dark"] {
+    --light-text-color: rgb(199, 199, 204);
+    --link-color: rgb(0, 112, 201);
+    --main-background-color: #0d1117;
+    --code-background-color: #14181e;
+    --main-text-color: #c9d1d9;
+}
+
+@media (prefers-color-scheme: dark) {
+    html,
+    html[data-theme="dark"] {
+        --light-text-color: rgb(199, 199, 204);
+        --link-color: rgb(0, 112, 201);
+        --main-background-color: #0d1117;
+        --code-background-color: #14181e;
+        --main-text-color: #c9d1d9;
+    }
+    html[data-theme="light"] {
+        --light-text-color: rgb(72, 72, 74);
+        --link-color: rgb(0, 112, 201);
+        --main-background-color: rgb(255, 255, 255);
+        --code-background-color: rgb(198, 198, 198);
+        --main-text-color: rgb(51, 51, 51);
+    }
+}
+
+.img-zoomable{
+    cursor: pointer!important;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+    margin: 0;
+    width: inherit;
+}
+
+.icon-2x {
+    font-size: 2em;
+}
+
+.content .tiny {
+    font-size: 0.4em;
+}
+
+@media only screen and (max-device-width: 600px) {
+    .sidebar {
+        position: inherit;
+        width: inherit;
+        margin: 0;
+        padding: 25px;
+    }
+    .sidebar img {
+        display: none;
+    }
+    .sidebar .name {
+        display: inline;
+    }
+    .sidebar .name .fname,
+    .sidebar .name .lname {
+        font-size: 25px;
+    }
+    .sidebar .meta {
+        display: none;
+    }
+    .sidebar ul {
+        padding: 25px;
+    }
+    .sidebar li {
+        display: inline;
+    }
+    .sidebar .sections {
+        margin: 0;
+    }
+    .sidebar .sections a {
+        font-size: 16px;
+        margin: 0 20px 0 0;
+        padding: 5px 10px;
+    }
+    #content-parent {
+        margin: 0;
+        padding: 5px 25px;
+        width: inherit;
+    }
+    .content h1 {
+        margin: 0 0 5px 0;
+    }
+}
+
+.highlight {
+    margin: 0;
+    background-color: var(--code-background-color);
+    font-size: 12px;
+    padding: 5px 10px;
+    overflow: auto;
+    text-shadow: none;
+    color: var(--main-text-color);
+}
+
+.highlighter-rouge {
+    margin-bottom: 1.2em;
+}
+
+
+/* Code highlighting (Shiki tokens, coloured like the old Rouge/Pygments theme) */
+html {
+    --shiki-foreground: var(--main-text-color);
+    --shiki-background: var(--code-background-color);
+    --shiki-token-keyword: #008800;
+    --shiki-token-constant: #0000dd;
+    --shiki-token-string: #dd2200;
+    --shiki-token-string-expression: #dd2200;
+    --shiki-token-comment: #888888;
+    --shiki-token-function: #0066bb;
+    --shiki-token-parameter: var(--main-text-color);
+    --shiki-token-punctuation: var(--main-text-color);
+    --shiki-token-link: var(--link-color);
+    --shiki-token-inserted: #22863a;
+    --shiki-token-deleted: #a61717;
+    --shiki-token-changed: #aa6600;
+}
+
+.highlight pre {
+    margin: 0;
+}
+
+.highlight code {
+    counter-reset: line;
+}
+
+.highlight .line::before {
+    counter-increment: line;
+    content: counter(line);
+    display: inline-block;
+    width: 2em;
+    margin-right: .5rem;
+    padding-right: .5rem;
+    border-right: 1px solid var(--main-text-color);
+    text-align: right;
+    user-select: none;
+    opacity: .6;
+}

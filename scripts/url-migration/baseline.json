@@ -1,0 +1,1138 @@
+{
+	"files": [
+		"404.html",
+		"CNAME",
+		"about.html",
+		"atom.xml",
+		"cv.html",
+		"favicon.ico",
+		"imprint.html",
+		"index.html",
+		"posts/ansible-top-5.html",
+		"posts/aws-launch-configuration-vs-template.html",
+		"posts/azure-load-balancer-with-failover.html",
+		"posts/capnproto-with-python.html",
+		"posts/cdk8s-the-future-of-k8s-application-deployments.html",
+		"posts/failing-aws-route53-records.html",
+		"posts/first-month-of-self-employment.html",
+		"posts/from-utterances-to-giscus.html",
+		"posts/indie-hacking-first-steps.html",
+		"posts/installing-python-in-openwrt-on-usb-storage.html",
+		"posts/integrating-cdk8s-with-argocd.html",
+		"posts/integrating-cdk8s-with-flux.html",
+		"posts/k8s-operators-with-python-part-1.html",
+		"posts/k8s-operators-with-python-part-2.html",
+		"posts/kubernetes-multi-tenancy.html",
+		"posts/kubernetes-overview-diagrams.html",
+		"posts/minikube-vs-kind-vs-k3s.html",
+		"posts/optimzing-kubernetes-applications.html",
+		"posts/python-str-vs-repr.html",
+		"posts/screwing-up-remote-access-to-servers.html",
+		"posts/self-employment-month-three.html",
+		"posts/setting-up-eks-with-irsa-using-terraform.html",
+		"posts/trigger-github-actions-on-pr-close.html",
+		"posts/wasting-money-with-kubernetes.html",
+		"robots.txt",
+		"side_projects.html",
+		"sitemap.xml",
+		"slides/cdk8s-revisited/css/layout.scss",
+		"slides/cdk8s-revisited/css/print/paper.scss",
+		"slides/cdk8s-revisited/css/print/pdf.scss",
+		"slides/cdk8s-revisited/css/reveal.scss",
+		"slides/cdk8s-revisited/css/theme/README.md",
+		"slides/cdk8s-revisited/css/theme/source/beige.scss",
+		"slides/cdk8s-revisited/css/theme/source/black.scss",
+		"slides/cdk8s-revisited/css/theme/source/blood.scss",
+		"slides/cdk8s-revisited/css/theme/source/league.scss",
+		"slides/cdk8s-revisited/css/theme/source/moon.scss",
+		"slides/cdk8s-revisited/css/theme/source/night.scss",
+		"slides/cdk8s-revisited/css/theme/source/serif.scss",
+		"slides/cdk8s-revisited/css/theme/source/simple.scss",
+		"slides/cdk8s-revisited/css/theme/source/sky.scss",
+		"slides/cdk8s-revisited/css/theme/source/solarized.scss",
+		"slides/cdk8s-revisited/css/theme/source/white.scss",
+		"slides/cdk8s-revisited/css/theme/template/exposer.scss",
+		"slides/cdk8s-revisited/css/theme/template/mixins.scss",
+		"slides/cdk8s-revisited/css/theme/template/settings.scss",
+		"slides/cdk8s-revisited/css/theme/template/theme.scss",
+		"slides/cdk8s-revisited/dist/reset.css",
+		"slides/cdk8s-revisited/dist/reveal.css",
+		"slides/cdk8s-revisited/dist/reveal.esm.js",
+		"slides/cdk8s-revisited/dist/reveal.js",
+		"slides/cdk8s-revisited/dist/theme/beige.css",
+		"slides/cdk8s-revisited/dist/theme/black.css",
+		"slides/cdk8s-revisited/dist/theme/blood.css",
+		"slides/cdk8s-revisited/dist/theme/fonts/league-gothic/LICENSE",
+		"slides/cdk8s-revisited/dist/theme/fonts/league-gothic/league-gothic.css",
+		"slides/cdk8s-revisited/dist/theme/fonts/league-gothic/league-gothic.eot",
+		"slides/cdk8s-revisited/dist/theme/fonts/league-gothic/league-gothic.ttf",
+		"slides/cdk8s-revisited/dist/theme/fonts/league-gothic/league-gothic.woff",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/LICENSE",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/source-sans-pro-italic.eot",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/source-sans-pro-italic.ttf",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/source-sans-pro-italic.woff",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.eot",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.ttf",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.woff",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/source-sans-pro-semibold.eot",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/source-sans-pro-semibold.ttf",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/source-sans-pro-semibold.woff",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/source-sans-pro-semibolditalic.eot",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/source-sans-pro-semibolditalic.ttf",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/source-sans-pro-semibolditalic.woff",
+		"slides/cdk8s-revisited/dist/theme/fonts/source-sans-pro/source-sans-pro.css",
+		"slides/cdk8s-revisited/dist/theme/league.css",
+		"slides/cdk8s-revisited/dist/theme/moon.css",
+		"slides/cdk8s-revisited/dist/theme/night.css",
+		"slides/cdk8s-revisited/dist/theme/serif.css",
+		"slides/cdk8s-revisited/dist/theme/simple.css",
+		"slides/cdk8s-revisited/dist/theme/sky.css",
+		"slides/cdk8s-revisited/dist/theme/solarized.css",
+		"slides/cdk8s-revisited/dist/theme/white.css",
+		"slides/cdk8s-revisited/index.html",
+		"slides/cdk8s-revisited/plugin/highlight/highlight.esm.js",
+		"slides/cdk8s-revisited/plugin/highlight/highlight.js",
+		"slides/cdk8s-revisited/plugin/highlight/monokai.css",
+		"slides/cdk8s-revisited/plugin/highlight/plugin.js",
+		"slides/cdk8s-revisited/plugin/highlight/solarized-dark.min.css",
+		"slides/cdk8s-revisited/plugin/highlight/zenburn.css",
+		"slides/cdk8s-revisited/plugin/markdown/markdown.esm.js",
+		"slides/cdk8s-revisited/plugin/markdown/markdown.js",
+		"slides/cdk8s-revisited/plugin/markdown/plugin.js",
+		"slides/cdk8s-revisited/plugin/math/math.esm.js",
+		"slides/cdk8s-revisited/plugin/math/math.js",
+		"slides/cdk8s-revisited/plugin/math/plugin.js",
+		"slides/cdk8s-revisited/plugin/notes/notes.esm.js",
+		"slides/cdk8s-revisited/plugin/notes/notes.js",
+		"slides/cdk8s-revisited/plugin/notes/plugin.js",
+		"slides/cdk8s-revisited/plugin/notes/speaker-view.html",
+		"slides/cdk8s-revisited/plugin/search/plugin.js",
+		"slides/cdk8s-revisited/plugin/search/search.esm.js",
+		"slides/cdk8s-revisited/plugin/search/search.js",
+		"slides/cdk8s-revisited/plugin/zoom/plugin.js",
+		"slides/cdk8s-revisited/plugin/zoom/zoom.esm.js",
+		"slides/cdk8s-revisited/plugin/zoom/zoom.js",
+		"static/css/base.css",
+		"static/css/fontello/LICENSE.txt",
+		"static/css/fontello/config.json",
+		"static/css/fontello/css/animation.css",
+		"static/css/fontello/css/fontello-codes.css",
+		"static/css/fontello/css/fontello-embedded.css",
+		"static/css/fontello/css/fontello-ie7-codes.css",
+		"static/css/fontello/css/fontello-ie7.css",
+		"static/css/fontello/css/fontello.css",
+		"static/css/fontello/font/fontello.eot",
+		"static/css/fontello/font/fontello.svg",
+		"static/css/fontello/font/fontello.ttf",
+		"static/css/fontello/font/fontello.woff",
+		"static/css/fontello/font/fontello.woff2",
+		"static/images/apple-touch-icon.png",
+		"static/images/argocd-replica-count-increase.gif",
+		"static/images/blockedbycors-backend-traffic.png",
+		"static/images/blockedbycors-blog-traffic.png",
+		"static/images/blockedbycors-result.png",
+		"static/images/blockedbycors.dev.png",
+		"static/images/bulk-convert.png",
+		"static/images/comment-reply.png",
+		"static/images/convert-issue.png",
+		"static/images/dalle-indie-hacker.webp",
+		"static/images/discussions-category.png",
+		"static/images/dns-failover.svg",
+		"static/images/exchangerates-operator.svg",
+		"static/images/hours-worked-per-month.png",
+		"static/images/issue-label.png",
+		"static/images/k8s-architecture.svg",
+		"static/images/k8s-money-burn.jpg",
+		"static/images/k8s-network.svg",
+		"static/images/k8s-rbac.svg",
+		"static/images/k8s-resources.svg",
+		"static/images/k8s-storage.svg",
+		"static/images/k8s-workloads.svg",
+		"static/images/launch-template-advanced.png",
+		"static/images/multi-tenancy.png",
+		"static/images/post-reactions.png",
+		"static/images/route53-nxdomain.png",
+		"static/images/sf-single-metric.png",
+		"static/images/sf-two-metrics.png",
+		"static/images/sfo-flow.png",
+		"static/images/slashmetrics.png",
+		"static/images/spot.jpg",
+		"static/images/steps.jpg",
+		"static/images/unable-to-convert.png",
+		"static/images/utterances-to-giscus.png",
+		"static/images/vcluster-architecture.png",
+		"static/images/virtual-cluster-architecture.png",
+		"static/images/wheretohostmy.app.png",
+		"static/images/working-hours-distribution-3.png",
+		"static/images/working-hours-distribution.svg",
+		"static/js/application.js",
+		"static/js/predomload.js",
+		"tag/ansible.html",
+		"tag/argocd.html",
+		"tag/aws.html",
+		"tag/azure.html",
+		"tag/capnproto.html",
+		"tag/cdk8s.html",
+		"tag/flux.html",
+		"tag/gitops.html",
+		"tag/indie-hacking.html",
+		"tag/kubernetes.html",
+		"tag/openwrt.html",
+		"tag/python.html",
+		"tag/self-employment.html",
+		"tag/terraform.html",
+		"talks.html"
+	],
+	"pages": {
+		"404.html": {
+			"title": "Dang it!",
+			"canonical": "https://shipit.dev/404",
+			"description": "",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/404",
+			"ogTitle": "Dang it!",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"about.html": {
+			"title": "About me",
+			"canonical": "https://shipit.dev/about",
+			"description": "",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/about",
+			"ogTitle": "About me",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"cv.html": {
+			"title": null,
+			"canonical": null,
+			"description": null,
+			"robots": null,
+			"ogUrl": null,
+			"ogTitle": null,
+			"ogImage": null,
+			"ids": [
+				"content",
+				"download-btn",
+				"lang-de",
+				"lang-en"
+			]
+		},
+		"imprint.html": {
+			"title": "Impressum",
+			"canonical": "https://shipit.dev/imprint",
+			"description": "",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/imprint",
+			"ogTitle": "Impressum",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"index.html": {
+			"title": "Posts",
+			"canonical": "https://shipit.dev/",
+			"description": "",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/",
+			"ogTitle": "Posts",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"posts/ansible-top-5.html": {
+			"title": "My top 5 positive points about Ansible in 2017",
+			"canonical": "https://shipit.dev/posts/ansible-top-5.html",
+			"description": "A 5 point list of my positive thoughts about Ansible in 2017.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/ansible-top-5.html",
+			"ogTitle": "My top 5 positive points about Ansible in 2017",
+			"ogImage": null,
+			"ids": [
+				"1-the-client-requirements",
+				"2-the-nonexistence-of-the-master-server",
+				"3-python",
+				"4-the-documentation",
+				"5-the-ecosystem",
+				"comments-giscus",
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"posts/aws-launch-configuration-vs-template.html": {
+			"title": "AWS EC2 launch configurations vs launch templates",
+			"canonical": "https://shipit.dev/posts/aws-launch-configuration-vs-template.html",
+			"description": "A comparison of EC2 launch configurations and launch templates + an advice which one you should prefer",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/aws-launch-configuration-vs-template.html",
+			"ogTitle": "AWS EC2 launch configurations vs launch templates",
+			"ogImage": "https://shipit.dev/static/images/launch-template-advanced.png",
+			"ids": [
+				"comments-giscus",
+				"content-parent",
+				"fname",
+				"lname",
+				"the-hot-stuff",
+				"theme-toggle",
+				"they-grow-up-so-fast",
+				"which-is-the-better-choice"
+			]
+		},
+		"posts/azure-load-balancer-with-failover.html": {
+			"title": "Setting up a load balancer with failover support in Azure",
+			"canonical": "https://shipit.dev/posts/azure-load-balancer-with-failover.html",
+			"description": "Setting up a load balancer with active-passive or failover support using Microsoft Azure Traffic Manager and Terraform",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/azure-load-balancer-with-failover.html",
+			"ogTitle": "Setting up a load balancer with failover support in Azure",
+			"ogImage": null,
+			"ids": [
+				"but-does-it",
+				"comments-giscus",
+				"content-parent",
+				"fname",
+				"lname",
+				"the-cloud-solves-all-your-problems",
+				"theme-toggle"
+			]
+		},
+		"posts/capnproto-with-python.html": {
+			"title": "Cap'n Proto with Python",
+			"canonical": "https://shipit.dev/posts/capnproto-with-python.html",
+			"description": "Find out how to use Cap'n Proto with Python.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/capnproto-with-python.html",
+			"ogTitle": "Cap'n Proto with Python",
+			"ogImage": null,
+			"ids": [
+				"capn-proto-with-python",
+				"comments-giscus",
+				"content-parent",
+				"data-interchange-format",
+				"de-serialization",
+				"fname",
+				"introduction-to-capn-proto",
+				"lname",
+				"message-creation",
+				"rpc",
+				"rpc-1",
+				"schema-language",
+				"theme-toggle"
+			]
+		},
+		"posts/cdk8s-the-future-of-k8s-application-deployments.html": {
+			"title": "cdk8s, the future of Kubernetes application deployments?",
+			"canonical": "https://shipit.dev/posts/cdk8s-the-future-of-k8s-application-deployments.html",
+			"description": "Find out whether cdk8s will become the future of Kubernetes application deployments.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/cdk8s-the-future-of-k8s-application-deployments.html",
+			"ogTitle": "cdk8s, the future of Kubernetes application deployments?",
+			"ogImage": null,
+			"ids": [
+				"comments-giscus",
+				"comparison-against-kustomize-and-helm",
+				"content-parent",
+				"fname",
+				"intro",
+				"lname",
+				"personal-opinion",
+				"theme-toggle",
+				"usage"
+			]
+		},
+		"posts/failing-aws-route53-records.html": {
+			"title": "Why newly created AWS Route53 records may not resolve",
+			"canonical": "https://shipit.dev/posts/failing-aws-route53-records.html",
+			"description": "Resolving newly created AWS Route53 DNS records may end up taking several minutes or even hours. Here's the explanation of one possible cause.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/failing-aws-route53-records.html",
+			"ogTitle": "Why newly created AWS Route53 records may not resolve",
+			"ogImage": "https://shipit.dev/static/images/route53-nxdomain.png",
+			"ids": [
+				"comments-giscus",
+				"content-parent",
+				"fname",
+				"lname",
+				"pending-vs-insync",
+				"putting-it-together",
+				"theme-toggle",
+				"understanding-soa"
+			]
+		},
+		"posts/first-month-of-self-employment.html": {
+			"title": "My first month of self-employment",
+			"canonical": "https://shipit.dev/posts/first-month-of-self-employment.html",
+			"description": "A summary of my first month being self-employed",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/first-month-of-self-employment.html",
+			"ogTitle": "My first month of self-employment",
+			"ogImage": "https://shipit.dev/static/images/working-hours-distribution.svg",
+			"ids": [
+				"all-hail-the-bureaucracy",
+				"comments-giscus",
+				"content-parent",
+				"fname",
+				"lname",
+				"my-way-towards-self-employment",
+				"some-numbers",
+				"summary",
+				"theme-toggle",
+				"update-17042021",
+				"upgrading"
+			]
+		},
+		"posts/from-utterances-to-giscus.html": {
+			"title": "Moving from utterances to giscus",
+			"canonical": "https://shipit.dev/posts/from-utterances-to-giscus.html",
+			"description": "Here's how to migrate from utterances to giscus without loosing existing comments on single or multiple pages.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/from-utterances-to-giscus.html",
+			"ogTitle": "Moving from utterances to giscus",
+			"ogImage": "https://shipit.dev/static/images/utterances-to-giscus.png",
+			"ids": [
+				"comments-giscus",
+				"content-parent",
+				"fname",
+				"lname",
+				"migrating-comments-of-a-single-page",
+				"migrating-comments-of-multiple-pages",
+				"preparing-your-site",
+				"theme-toggle",
+				"why-migrate"
+			]
+		},
+		"posts/indie-hacking-first-steps.html": {
+			"title": "My first steps in indie hacking",
+			"canonical": "https://shipit.dev/posts/indie-hacking-first-steps.html",
+			"description": "Sharing the journey of getting my feet wet with indie hacking",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/indie-hacking-first-steps.html",
+			"ogTitle": "My first steps in indie hacking",
+			"ogImage": "https://shipit.dev/static/images/blockedbycors-backend-traffic.png",
+			"ids": [
+				"any-results",
+				"back-to-simplicity",
+				"blocked-by-cors",
+				"building-for-users",
+				"comments-giscus",
+				"content-parent",
+				"decoupling-income-from-time",
+				"fname",
+				"getting-things-started",
+				"learning-new-stuff",
+				"lname",
+				"long-term-strategy",
+				"my-background",
+				"short-term-strategy",
+				"theme-toggle",
+				"was-it-worth-it",
+				"whats-next",
+				"why-indie-hacking"
+			]
+		},
+		"posts/installing-python-in-openwrt-on-usb-storage.html": {
+			"title": "Installing Python in OpenWRT on a USB storage",
+			"canonical": "https://shipit.dev/posts/installing-python-in-openwrt-on-usb-storage.html",
+			"description": "A guide on installing Python on a USB storage device when running OpenWRT.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/installing-python-in-openwrt-on-usb-storage.html",
+			"ogTitle": "Installing Python in OpenWRT on a USB storage",
+			"ogImage": null,
+			"ids": [
+				"1-the-problem",
+				"2-looking-for-solutions",
+				"3-accessing-a-usb-device",
+				"4-installing-python-to-a-usb-device",
+				"comments-giscus",
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"posts/integrating-cdk8s-with-argocd.html": {
+			"title": "Integrating cdk8s with Argo CD",
+			"canonical": "https://shipit.dev/posts/integrating-cdk8s-with-argocd.html",
+			"description": "Find out how to integrate cdk8s with Argo CD by following this guide.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/integrating-cdk8s-with-argocd.html",
+			"ogTitle": "Integrating cdk8s with Argo CD",
+			"ogImage": null,
+			"ids": [
+				"argo-cd",
+				"comments-giscus",
+				"conclusion",
+				"content-parent",
+				"fname",
+				"integration",
+				"lname",
+				"preparation",
+				"theme-toggle"
+			]
+		},
+		"posts/integrating-cdk8s-with-flux.html": {
+			"title": "Integrating cdk8s with Flux",
+			"canonical": "https://shipit.dev/posts/integrating-cdk8s-with-flux.html",
+			"description": "Find out how to integrate cdk8s with Flux by following this guide.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/integrating-cdk8s-with-flux.html",
+			"ogTitle": "Integrating cdk8s with Flux",
+			"ogImage": null,
+			"ids": [
+				"cdk8s",
+				"comments-giscus",
+				"conclusion",
+				"content-parent",
+				"flux",
+				"fname",
+				"lname",
+				"putting-them-together",
+				"the-not-yet-elegant-way",
+				"the-obvious-way",
+				"theme-toggle"
+			]
+		},
+		"posts/k8s-operators-with-python-part-1.html": {
+			"title": "Kubernetes operators with Python #1: Creating CRDs",
+			"canonical": "https://shipit.dev/posts/k8s-operators-with-python-part-1.html",
+			"description": "Developing Kubernetes/K8s operators with Python Part 1: Creating CRDs using manifests and the Kubernetes API",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/k8s-operators-with-python-part-1.html",
+			"ogTitle": "Kubernetes operators with Python #1: Creating CRDs",
+			"ogImage": "https://shipit.dev/static/images/exchangerates-operator.svg",
+			"ids": [
+				"comments-giscus",
+				"content-parent",
+				"creating-the-crd",
+				"fname",
+				"introduction",
+				"lname",
+				"theme-toggle",
+				"using-a-kubernetes-manifest",
+				"using-the-kubernetes-api"
+			]
+		},
+		"posts/k8s-operators-with-python-part-2.html": {
+			"title": "Kubernetes operators with Python #2: Implementing Controller",
+			"canonical": "https://shipit.dev/posts/k8s-operators-with-python-part-2.html",
+			"description": "Developing Kubernetes/K8s operators with Python Part 2: Implementing the controller using Kopf",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/k8s-operators-with-python-part-2.html",
+			"ogTitle": "Kubernetes operators with Python #2: Implementing Controller",
+			"ogImage": "https://shipit.dev/static/images/exchangerates-operator.svg",
+			"ids": [
+				"comments-giscus",
+				"content-parent",
+				"fname",
+				"implementing-the-controller",
+				"introduction",
+				"lname",
+				"packaging-and-running-the-controller",
+				"theme-toggle",
+				"update-19012021"
+			]
+		},
+		"posts/kubernetes-multi-tenancy.html": {
+			"title": "Sharing a Kubernetes cluster between multiple tenants",
+			"canonical": "https://shipit.dev/posts/kubernetes-multi-tenancy.html",
+			"description": "Sharing Kubernetes clusters between multiple tenants becomes more and more important as adoption of it increases. Here's an overview about the tools you have to do it safely.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/kubernetes-multi-tenancy.html",
+			"ogTitle": "Sharing a Kubernetes cluster between multiple tenants",
+			"ogImage": "https://shipit.dev/static/images/multi-tenancy.png",
+			"ids": [
+				"comments-giscus",
+				"conclusion",
+				"content-parent",
+				"fname",
+				"hierarchical-namespaces",
+				"k3s",
+				"kubernetes-virtualcluster",
+				"lname",
+				"loft-labs-vcluster",
+				"multiple-clusters",
+				"namespaces",
+				"syncer",
+				"syncer-1",
+				"theme-toggle",
+				"vc-manager",
+				"virtual-cluster",
+				"vn-agent"
+			]
+		},
+		"posts/kubernetes-overview-diagrams.html": {
+			"title": "Kubernetes Overview Diagrams",
+			"canonical": "https://shipit.dev/posts/kubernetes-overview-diagrams.html",
+			"description": "A collection of overviews of Kubernetes architecture and workload, networking, storage and RBAC objects",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/kubernetes-overview-diagrams.html",
+			"ogTitle": "Kubernetes Overview Diagrams",
+			"ogImage": "https://shipit.dev/static/images/k8s-workloads.svg",
+			"ids": [
+				"architecture",
+				"comments-giscus",
+				"content-parent",
+				"fname",
+				"lname",
+				"networking",
+				"rbac",
+				"resource-requests-and-limits",
+				"storage",
+				"theme-toggle",
+				"workload"
+			]
+		},
+		"posts/minikube-vs-kind-vs-k3s.html": {
+			"title": "Minikube vs. kind vs. k3s - What should I use?",
+			"canonical": "https://shipit.dev/posts/minikube-vs-kind-vs-k3s.html",
+			"description": "A little comparison of local Kubernetes tools like Minikube, kind and k3s.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/minikube-vs-kind-vs-k3s.html",
+			"ogTitle": "Minikube vs. kind vs. k3s - What should I use?",
+			"ogImage": null,
+			"ids": [
+				"comments-giscus",
+				"content-parent",
+				"fname",
+				"k3s",
+				"kind",
+				"lname",
+				"minikube",
+				"summary",
+				"theme-toggle"
+			]
+		},
+		"posts/optimzing-kubernetes-applications.html": {
+			"title": "Optimizing applications on Kubernetes using Machine Learning",
+			"canonical": "https://shipit.dev/posts/optimzing-kubernetes-applications.html",
+			"description": "This blog post shows how to optimize Kubernetes deployments using a SaaS product that is based on machine learning.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/optimzing-kubernetes-applications.html",
+			"ogTitle": "Optimizing applications on Kubernetes using Machine Learning",
+			"ogImage": "https://shipit.dev/static/images/sf-two-metrics.png",
+			"ids": [
+				"adding-another-dimension",
+				"comments-giscus",
+				"conclusion",
+				"content-parent",
+				"fname",
+				"getting-started",
+				"intro",
+				"lname",
+				"metrics",
+				"optimization",
+				"optimizing-with-stormforge",
+				"parameters",
+				"patches",
+				"starting-simple",
+				"theme-toggle",
+				"trial-template"
+			]
+		},
+		"posts/python-str-vs-repr.html": {
+			"title": "Python's str() vs. repr()",
+			"canonical": "https://shipit.dev/posts/python-str-vs-repr.html",
+			"description": "This post will tell you difference between Python's str() and repr().",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/python-str-vs-repr.html",
+			"ogTitle": "Python's str() vs. repr()",
+			"ogImage": null,
+			"ids": [
+				"comments-giscus",
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"posts/screwing-up-remote-access-to-servers.html": {
+			"title": "Screwing up remote access to dozens of servers within seconds",
+			"canonical": "https://shipit.dev/posts/screwing-up-remote-access-to-servers.html",
+			"description": "A little postmortem story of me using Ansible to disable access to dozens of servers in seconds and what I learned from my mistakes.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/screwing-up-remote-access-to-servers.html",
+			"ogTitle": "Screwing up remote access to dozens of servers within seconds",
+			"ogImage": null,
+			"ids": [
+				"comments-giscus",
+				"content-parent",
+				"fname",
+				"lname",
+				"the-day-i-screwed-up",
+				"the-learning",
+				"the-power-of-infrastructure-as-code",
+				"theme-toggle",
+				"update-22122020"
+			]
+		},
+		"posts/self-employment-month-three.html": {
+			"title": "Self-employment: three months update",
+			"canonical": "https://shipit.dev/posts/self-employment-month-three.html",
+			"description": "Read through the experiences I made during three months of self-employment as a DevOps freelancer.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/self-employment-month-three.html",
+			"ogTitle": "Self-employment: three months update",
+			"ogImage": "https://shipit.dev/static/images/hours-worked-per-month.png",
+			"ids": [
+				"clients-come-and-go",
+				"comments-giscus",
+				"conclusion-after-three-months",
+				"content-parent",
+				"fname",
+				"lets-start-with-numbers",
+				"lname",
+				"payment-fees",
+				"some-background",
+				"taxes",
+				"theme-toggle"
+			]
+		},
+		"posts/setting-up-eks-with-irsa-using-terraform.html": {
+			"title": "Setting up an EKS cluster with IAM/IRSA integration",
+			"canonical": "https://shipit.dev/posts/setting-up-eks-with-irsa-using-terraform.html",
+			"description": "Setting up an EKS cluster with IAM/IRSA integration using Terraform and showing how to make use of it.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/setting-up-eks-with-irsa-using-terraform.html",
+			"ogTitle": "Setting up an EKS cluster with IAM/IRSA integration",
+			"ogImage": null,
+			"ids": [
+				"comments-giscus",
+				"content-parent",
+				"creating-a-service-account-associated-with-an-iam-role",
+				"creating-the-eks-cluster",
+				"fname",
+				"introduction",
+				"lname",
+				"preparing-the-vpc",
+				"theme-toggle",
+				"using-the-service-account-in-your-application"
+			]
+		},
+		"posts/trigger-github-actions-on-pr-close.html": {
+			"title": "Github Actions workflow for merged/closed PRs",
+			"canonical": "https://shipit.dev/posts/trigger-github-actions-on-pr-close.html",
+			"description": "A little guide on how to trigger Github Actions workflows when a PR has been closed while distinguishing whether is has been merged or not.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/trigger-github-actions-on-pr-close.html",
+			"ogTitle": "Github Actions workflow for merged/closed PRs",
+			"ogImage": null,
+			"ids": [
+				"comments-giscus",
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"posts/wasting-money-with-kubernetes.html": {
+			"title": "How to waste money using Kubernetes",
+			"canonical": "https://shipit.dev/posts/wasting-money-with-kubernetes.html",
+			"description": "Kubernetes is full of opportunities and wasting money is one of them. Find out how to avoid that as much as possible.",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/posts/wasting-money-with-kubernetes.html",
+			"ogTitle": "How to waste money using Kubernetes",
+			"ogImage": "https://shipit.dev/static/images/k8s-money-burn.jpg",
+			"ids": [
+				"buy-3-get-2",
+				"cluster-autoscaling",
+				"comments-giscus",
+				"content-parent",
+				"cpu-and-memory-requests",
+				"fearing-the-spot",
+				"fname",
+				"horizontal-pod-autoscaling",
+				"lazy-and-hungry",
+				"lname",
+				"summary",
+				"the-productive-vm",
+				"theme-toggle",
+				"vertical-pod-autoscaling"
+			]
+		},
+		"side_projects.html": {
+			"title": "Projects",
+			"canonical": "https://shipit.dev/side_projects",
+			"description": "",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/side_projects",
+			"ogTitle": "Projects",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/ansible.html": {
+			"title": "Tag: ansible",
+			"canonical": "https://shipit.dev/tag/ansible",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/ansible",
+			"ogTitle": "Tag: ansible",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/argocd.html": {
+			"title": "Tag: argocd",
+			"canonical": "https://shipit.dev/tag/argocd",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/argocd",
+			"ogTitle": "Tag: argocd",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/aws.html": {
+			"title": "Tag: aws",
+			"canonical": "https://shipit.dev/tag/aws",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/aws",
+			"ogTitle": "Tag: aws",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/azure.html": {
+			"title": "Tag: azure",
+			"canonical": "https://shipit.dev/tag/azure",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/azure",
+			"ogTitle": "Tag: azure",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/capnproto.html": {
+			"title": "Tag: capnproto",
+			"canonical": "https://shipit.dev/tag/capnproto",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/capnproto",
+			"ogTitle": "Tag: capnproto",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/cdk8s.html": {
+			"title": "Tag: cdk8s",
+			"canonical": "https://shipit.dev/tag/cdk8s",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/cdk8s",
+			"ogTitle": "Tag: cdk8s",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/flux.html": {
+			"title": "Tag: flux",
+			"canonical": "https://shipit.dev/tag/flux",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/flux",
+			"ogTitle": "Tag: flux",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/gitops.html": {
+			"title": "Tag: gitops",
+			"canonical": "https://shipit.dev/tag/gitops",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/gitops",
+			"ogTitle": "Tag: gitops",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/indie-hacking.html": {
+			"title": "Tag: indie-hacking",
+			"canonical": "https://shipit.dev/tag/indie-hacking",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/indie-hacking",
+			"ogTitle": "Tag: indie-hacking",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/kubernetes.html": {
+			"title": "Tag: kubernetes",
+			"canonical": "https://shipit.dev/tag/kubernetes",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/kubernetes",
+			"ogTitle": "Tag: kubernetes",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/openwrt.html": {
+			"title": "Tag: openwrt",
+			"canonical": "https://shipit.dev/tag/openwrt",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/openwrt",
+			"ogTitle": "Tag: openwrt",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/python.html": {
+			"title": "Tag: python",
+			"canonical": "https://shipit.dev/tag/python",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/python",
+			"ogTitle": "Tag: python",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/self-employment.html": {
+			"title": "Tag: self-employment",
+			"canonical": "https://shipit.dev/tag/self-employment",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/self-employment",
+			"ogTitle": "Tag: self-employment",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"tag/terraform.html": {
+			"title": "Tag: terraform",
+			"canonical": "https://shipit.dev/tag/terraform",
+			"description": "",
+			"robots": "noindex",
+			"ogUrl": "https://shipit.dev/tag/terraform",
+			"ogTitle": "Tag: terraform",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		},
+		"talks.html": {
+			"title": "Talks",
+			"canonical": "https://shipit.dev/talks",
+			"description": "",
+			"robots": null,
+			"ogUrl": "https://shipit.dev/talks",
+			"ogTitle": "Talks",
+			"ogImage": null,
+			"ids": [
+				"content-parent",
+				"fname",
+				"lname",
+				"theme-toggle"
+			]
+		}
+	},
+	"sitemap": [
+		"https://shipit.dev/posts/ansible-top-5.html",
+		"https://shipit.dev/posts/aws-launch-configuration-vs-template.html",
+		"https://shipit.dev/posts/azure-load-balancer-with-failover.html",
+		"https://shipit.dev/posts/capnproto-with-python.html",
+		"https://shipit.dev/posts/cdk8s-the-future-of-k8s-application-deployments.html",
+		"https://shipit.dev/posts/failing-aws-route53-records.html",
+		"https://shipit.dev/posts/first-month-of-self-employment.html",
+		"https://shipit.dev/posts/from-utterances-to-giscus.html",
+		"https://shipit.dev/posts/indie-hacking-first-steps.html",
+		"https://shipit.dev/posts/installing-python-in-openwrt-on-usb-storage.html",
+		"https://shipit.dev/posts/integrating-cdk8s-with-argocd.html",
+		"https://shipit.dev/posts/integrating-cdk8s-with-flux.html",
+		"https://shipit.dev/posts/k8s-operators-with-python-part-1.html",
+		"https://shipit.dev/posts/k8s-operators-with-python-part-2.html",
+		"https://shipit.dev/posts/kubernetes-multi-tenancy.html",
+		"https://shipit.dev/posts/kubernetes-overview-diagrams.html",
+		"https://shipit.dev/posts/minikube-vs-kind-vs-k3s.html",
+		"https://shipit.dev/posts/optimzing-kubernetes-applications.html",
+		"https://shipit.dev/posts/python-str-vs-repr.html",
+		"https://shipit.dev/posts/screwing-up-remote-access-to-servers.html",
+		"https://shipit.dev/posts/self-employment-month-three.html",
+		"https://shipit.dev/posts/setting-up-eks-with-irsa-using-terraform.html",
+		"https://shipit.dev/posts/trigger-github-actions-on-pr-close.html",
+		"https://shipit.dev/posts/wasting-money-with-kubernetes.html"
+	],
+	"atom": [
+		{
+			"link": "https://shipit.dev/posts/ansible-top-5.html",
+			"id": "https://shipit.dev/posts/ansible-top-5"
+		},
+		{
+			"link": "https://shipit.dev/posts/aws-launch-configuration-vs-template.html",
+			"id": "https://shipit.dev/posts/aws-launch-configuration-vs-template"
+		},
+		{
+			"link": "https://shipit.dev/posts/azure-load-balancer-with-failover.html",
+			"id": "https://shipit.dev/posts/azure-load-balancer-with-failover"
+		},
+		{
+			"link": "https://shipit.dev/posts/capnproto-with-python.html",
+			"id": "https://shipit.dev/posts/capnproto-with-python"
+		},
+		{
+			"link": "https://shipit.dev/posts/cdk8s-the-future-of-k8s-application-deployments.html",
+			"id": "https://shipit.dev/posts/cdk8s-the-future-of-k8s-application-deployments"
+		},
+		{
+			"link": "https://shipit.dev/posts/failing-aws-route53-records.html",
+			"id": "https://shipit.dev/posts/failing-aws-route53-records"
+		},
+		{
+			"link": "https://shipit.dev/posts/first-month-of-self-employment.html",
+			"id": "https://shipit.dev/posts/first-month-of-self-employment"
+		},
+		{
+			"link": "https://shipit.dev/posts/from-utterances-to-giscus.html",
+			"id": "https://shipit.dev/posts/from-utterances-to-giscus"
+		},
+		{
+			"link": "https://shipit.dev/posts/indie-hacking-first-steps.html",
+			"id": "https://shipit.dev/posts/indie-hacking-first-steps"
+		},
+		{
+			"link": "https://shipit.dev/posts/installing-python-in-openwrt-on-usb-storage.html",
+			"id": "https://shipit.dev/posts/installing-python-in-openwrt-on-usb-storage"
+		},
+		{
+			"link": "https://shipit.dev/posts/integrating-cdk8s-with-argocd.html",
+			"id": "https://shipit.dev/posts/integrating-cdk8s-with-argocd"
+		},
+		{
+			"link": "https://shipit.dev/posts/integrating-cdk8s-with-flux.html",
+			"id": "https://shipit.dev/posts/integrating-cdk8s-with-flux"
+		},
+		{
+			"link": "https://shipit.dev/posts/k8s-operators-with-python-part-1.html",
+			"id": "https://shipit.dev/posts/k8s-operators-with-python-part-1"
+		},
+		{
+			"link": "https://shipit.dev/posts/k8s-operators-with-python-part-2.html",
+			"id": "https://shipit.dev/posts/k8s-operators-with-python-part-2"
+		},
+		{
+			"link": "https://shipit.dev/posts/kubernetes-multi-tenancy.html",
+			"id": "https://shipit.dev/posts/kubernetes-multi-tenancy"
+		},
+		{
+			"link": "https://shipit.dev/posts/kubernetes-overview-diagrams.html",
+			"id": "https://shipit.dev/posts/kubernetes-overview-diagrams"
+		},
+		{
+			"link": "https://shipit.dev/posts/minikube-vs-kind-vs-k3s.html",
+			"id": "https://shipit.dev/posts/minikube-vs-kind-vs-k3s"
+		},
+		{
+			"link": "https://shipit.dev/posts/optimzing-kubernetes-applications.html",
+			"id": "https://shipit.dev/posts/optimzing-kubernetes-applications"
+		},
+		{
+			"link": "https://shipit.dev/posts/python-str-vs-repr.html",
+			"id": "https://shipit.dev/posts/python-str-vs-repr"
+		},
+		{
+			"link": "https://shipit.dev/posts/screwing-up-remote-access-to-servers.html",
+			"id": "https://shipit.dev/posts/screwing-up-remote-access-to-servers"
+		},
+		{
+			"link": "https://shipit.dev/posts/self-employment-month-three.html",
+			"id": "https://shipit.dev/posts/self-employment-month-three"
+		},
+		{
+			"link": "https://shipit.dev/posts/setting-up-eks-with-irsa-using-terraform.html",
+			"id": "https://shipit.dev/posts/setting-up-eks-with-irsa-using-terraform"
+		},
+		{
+			"link": "https://shipit.dev/posts/trigger-github-actions-on-pr-close.html",
+			"id": "https://shipit.dev/posts/trigger-github-actions-on-pr-close"
+		},
+		{
+			"link": "https://shipit.dev/posts/wasting-money-with-kubernetes.html",
+			"id": "https://shipit.dev/posts/wasting-money-with-kubernetes"
+		}
+	]
+}

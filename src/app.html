@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+		<meta name="google-site-verification" content="cFs9u1N3P-DiKvt30-QMMfi65NIr797ZtF4FDTD1itU" />
+		<meta content="Max Brenner" property="og:site_name" />
+		<meta content="@__brennerm" property="twitter:site" />
+		<meta content="@__brennerm" property="twitter:creator" />
+		<link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+		<link rel="stylesheet" href="/static/css/fontello/css/fontello.css" type="text/css" />
+		<link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png" />
+		<link rel="icon" href="/favicon.ico" />
+		<script>
+			// Set the colour scheme before first paint to avoid a flash of the wrong theme.
+			try {
+				const stored = localStorage.getItem('theme');
+				const dark = stored ? stored === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+				document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+			} catch (e) {}
+		</script>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
