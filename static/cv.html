@@ -163,8 +163,8 @@
             DE
           </button>
         </div>
-        <button type="button" id="download-btn"
-          class="rounded-xl border border-blue-500 bg-blue-500 px-5 py-2 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-blue-600 hover:border-blue-600 flex items-center gap-2">
+        <a id="download-btn" href="/cv-en.pdf" download="Max-Brenner-CV.pdf"
+          class="rounded-xl border border-blue-500 bg-blue-500 px-5 py-2 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-blue-600 hover:border-blue-600 hover:text-white hover:no-underline flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="icon icon-tabler icons-tabler-outline icon-tabler-file-type-pdf">
@@ -177,7 +177,7 @@
             <path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" />
           </svg>
           Download PDF
-        </button>
+        </a>
       </div>
     </header>
     <div id="content" class="flex flex-1 overflow-y-auto lg:overflow-hidden flex-col lg:flex-row">
@@ -212,7 +212,7 @@
             <li><span class="font-semibold text-slate-900">GitOps:</span> Argo CD, Flux CD</li>
             <li><span class="font-semibold text-slate-900">IaC:</span> Ansible, Terraform, OpenTofu, Helm</li>
             <li><span class="font-semibold text-slate-900">Monitoring:</span> Prometheus, Grafana, ELK, TICK</li>
-            <li><span class="font-semibold text-slate-900">CI/CD:</span> Gitlab CI, Github Actions, Azure DevOps, Jenkins</li>
+            <li><span class="font-semibold text-slate-900">CI/CD:</span> GitLab CI, GitHub Actions, Azure DevOps, Jenkins</li>
             <li><span class="font-semibold text-slate-900">Dev:</span> HTML/CSS/JS, Svelte/SvelteKit, Python, Java,
               Kotlin, Golang, Bash</li>
               <li><span class="font-semibold text-slate-900">Dependency Management:</span> Trivy, Renovate, Dependabot, Harbor</li>
@@ -349,8 +349,7 @@
                 <span
                   class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Terraform</span>
                 <span
-                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Gitlab
-                  CI</span>
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">GitLab CI</span>
                 <span
                   class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Renovate</span>
               </div>
@@ -382,8 +381,7 @@
                 <span
                   class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Docker</span>
                 <span
-                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Github
-                  CI</span>
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">GitHub Actions</span>
               </div>
             </article>
 
@@ -406,8 +404,7 @@
                 <span
                   class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Ansible</span>
                 <span
-                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">Github
-                  Actions</span>
+                  class="px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 hover:border-blue-300 transition-all duration-200 cursor-default">GitHub Actions</span>
               </div>
             </article>
 
@@ -652,31 +649,31 @@
         'proj3-company': 'IoT Hard- und Softwarehersteller',
         'proj3-industry': 'Pharma und Medizintechnik · 10-50 Mitarbeiter',
         'proj3-period': '02/2022 — bis heute',
-        'proj3-desc': 'Migration, Wartung und Weiterentwicklung einer Platform für 20+ Microservices',
+        'proj3-desc': 'Migration, Wartung und Weiterentwicklung einer Plattform für 20+ Microservices',
         'proj4-title': 'Cloud Consultant',
         'proj4-company': 'Kubernetes Consulting Agentur',
         'proj4-industry': 'Internet und Informationstechnologie · 10-50 Mitarbeiter',
-        'proj4-period': '01/2021 — 27.02.2025',
+        'proj4-period': '01/2021 — 02/2025',
         'proj4-desc': 'Betreiben einer Microservice Anwendung auf Kubernetes in AWS',
         'proj5-title': 'DevOps Engineer',
         'proj5-company': 'AI Hard- und Softwarefirma',
         'proj5-industry': 'Internet und Informationstechnologie · 10-50 Mitarbeiter',
-        'proj5-period': '01/2021 — 27.02.2025',
+        'proj5-period': '01/2021 — 02/2025',
         'proj5-desc': 'Aufbauen einer Fleet Management Plattform',
         'proj6-title': 'Cloud Architect',
         'proj6-company': 'Deutscher Energiekonzern',
         'proj6-industry': 'Energie, Wasser und Umwelt · >10.000 Mitarbeiter',
-        'proj6-period': '07/2021 — 01.11.2021',
+        'proj6-period': '07/2021 — 11/2021',
         'proj6-desc': 'Migration einer On-Premise Anwendung in die Azure Cloud',
         'proj7-title': 'DevOps Engineer / Projektleitung',
         'proj7-company': 'Deutscher Automobilhersteller',
         'proj7-industry': 'Automobil und Fahrzeugbau · >10.000 Mitarbeiter',
-        'proj7-period': '12/2018 — 01.12.2020',
+        'proj7-period': '12/2018 — 12/2020',
         'proj7-desc': 'Entwicklung, Deployment und Betrieb einer Microservice-Backendapplikation für Elektrofahrzeuge',
         'proj8-title': 'DevOps Engineer',
         'proj8-company': 'Rohde & Schwarz',
         'proj8-industry': 'Internet und Informationstechnologie · >10.000 Mitarbeiter',
-        'proj8-period': '10/2015 — 01.11.2018',
+        'proj8-period': '10/2015 — 11/2018',
         'proj8-desc': 'Aufsetzen und Verwalten der internen Infrastruktur- und Servicelandschaft. Installation von Hard- und Softwarekomponenten beim Kunden vor Ort.',
         'education': 'AUSBILDUNG',
         'education-degree': 'B.Sc. Informatik — Studienakademie Leipzig',
@@ -702,10 +699,12 @@
         }
       });
 
-      // Update download button text
+      // Update download button text and target
       const downloadBtn = document.getElementById('download-btn');
       const btnText = downloadBtn.childNodes[downloadBtn.childNodes.length - 1];
       btnText.textContent = translations[lang]['download-pdf'];
+      downloadBtn.href = `/cv-${lang}.pdf`;
+      downloadBtn.download = lang === 'de' ? 'Max-Brenner-Lebenslauf.pdf' : 'Max-Brenner-CV.pdf';
 
       // Update button states
       document.getElementById('lang-en').className = lang === 'en'
@@ -726,11 +725,6 @@
       if (savedLang !== 'en') {
         setLanguage(savedLang);
       }
-    });
-
-    // Download PDF button
-    document.getElementById('download-btn').addEventListener('click', () => {
-      window.print();
     });
   </script>
 </body>

@@ -12,6 +12,7 @@ npm run check:urls   # verify the build still serves every URL of the old Jekyll
 - Posts live in `src/posts/<slug>.md` and are served at `/posts/<slug>.html`. Front matter: `title`, `description`, `date`, `category`, `tags`, `draft`, `thumbnail`.
 - Images go in `static/static/images/` (served at `/static/images/...`). Use `<Image url=... description=... />` in posts for captioned, zoomable images.
 - Pushing to `gh-pages` builds and deploys via `.github/workflows/deploy.yml`.
+- `npm run build` also renders `static/cv-en.pdf` and `static/cv-de.pdf` (gitignored) from the content of `static/cv.html`, using the layout in `scripts/cv-pdf/template.mjs`. This needs Chrome installed. Under `npm run dev`, run `npm run build:cv` to create or refresh them.
 
 ## URL migration check
 
