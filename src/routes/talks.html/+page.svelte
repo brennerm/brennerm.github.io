@@ -1,0 +1,23 @@
+<script>
+	import Seo from '#lib/components/Seo.svelte';
+</script>
+
+<Seo title="Talks" path="/talks" />
+
+<section class="content">
+  <h1>Talks</h1>
+
+  <h3>cdk8s - the future of Kubernetes application deployments - revisited</h3>
+  <ul>
+    <li>Date: 30.04.2021</li>
+    <li>Event: <a href="https://www.cdkday.com/">CDK Day 2021</a></li>
+    <li><a href="/slides/cdk8s-revisited/index.html" data-sveltekit-reload>Slides</a></li>
+    <li><a href="https://www.youtube.com/watch?v=K5Xuf0DI6ak">Recording</a></li>
+  </ul>
+  
+  <h3>An introduction into service meshes</h3>
+  <ul>
+    <li>Date: 26.11.2019</li>
+    <li>Event: <a href="https://www.jambit.com/en/latest-info/events/software-enthusiasts-meetup-leipzig/">software enthusiasts Meetup Leipzig</a></li>
+  </ul>
+</section>
