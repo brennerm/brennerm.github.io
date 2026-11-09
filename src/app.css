@@ -485,3 +485,9 @@ html {
     user-select: none;
     opacity: .6;
 }
+
+/* Screenshots that come in a light and a dark variant; data-theme is always set on <html> */
+html[data-theme="dark"] .theme-light,
+html:not([data-theme="dark"]) .theme-dark {
+    display: none;
+}
